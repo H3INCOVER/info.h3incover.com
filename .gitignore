@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# project specific backups & temp files
+_backup_static/
+info_temp/
+.gemini/
+.agents/
