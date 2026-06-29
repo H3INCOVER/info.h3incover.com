@@ -278,12 +278,14 @@ export default function Home() {
               H3 Incover 本体サイトを見る
               <ArrowRight className="w-4 h-4 ml-2" />
             </a>
-            <Link
-              href="/operator"
+            <a
+              href="https://h3incover.com/care/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full border border-gray-700 text-sm font-black hover:bg-gray-800 transition-all duration-200"
             >
               介護ホームページサービス（詳細）
-            </Link>
+            </a>
           </div>
         </div>
       </section>
