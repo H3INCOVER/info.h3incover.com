@@ -174,6 +174,36 @@ export default async function PostPage({ params }: PostPageProps) {
           {/* SNS共有ボタン */}
           <ShareButtons title={post.title} />
 
+          {/* 共通CTA */}
+          <div className="mt-16 bg-brand-bg border border-brand-border rounded-3xl p-8 md:p-10 text-center space-y-6">
+            <span className="text-xs font-black tracking-widest text-brand-red uppercase block">
+              Contact
+            </span>
+            <h2 className="text-xl md:text-2xl font-black text-brand-black tracking-tight leading-snug max-w-xl mx-auto">
+              ホームページや情報発信について相談したい方はこちら
+            </h2>
+            <p className="text-sm text-brand-muted font-medium leading-relaxed max-w-2xl mx-auto">
+              H3 Incoverでは、介護事業所向けのホームページ制作（Navi-Cover）のほか、Web制作、情報・導線設計、情報発信に関する各種ご相談やサポートを承っております。まずはお気軽にお問い合わせください。
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-2">
+              <a
+                href="mailto:hiraoka@h3incover.com"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full bg-brand-red text-white text-sm font-black hover:bg-brand-red/90 transition-colors duration-200"
+              >
+                メールでお問い合わせ
+              </a>
+              <a
+                href="https://h3incover.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full bg-white border border-brand-border text-brand-black text-sm font-black hover:bg-brand-bg-soft transition-colors duration-200"
+              >
+                H3 Incover 公式サイト
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </a>
+            </div>
+          </div>
+
           {/* 関連記事 */}
           {relatedPosts.length > 0 && (
             <section className="mt-16 pt-12 border-t border-brand-border">
