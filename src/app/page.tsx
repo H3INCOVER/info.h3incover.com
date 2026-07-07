@@ -128,55 +128,53 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
             {latestPosts.map((post) => (
-              <article
-                key={post.slug}
-                className="group flex flex-col sm:flex-row gap-5 border-b border-brand-border pb-8 last:border-0"
-              >
-                {/* アイキャッチ画像 */}
-                <Link
-                  href={`/posts/${post.slug}`}
-                  className="block relative w-full sm:w-1/3 aspect-video sm:aspect-square md:aspect-video rounded-2xl overflow-hidden border border-brand-border bg-brand-bg-soft flex-shrink-0"
-                >
-                  <ImageWithFallback
-                    src={post.eyecatch}
-                    alt={post.title}
-                    className="object-cover w-full h-full group-hover:scale-102 transition-transform duration-300"
-                    fallbackSrc="/images/categories/other.png"
-                  />
-                </Link>
+              <article key={post.slug} className="group flex flex-col justify-between">
+                <div>
+                  {/* アイキャッチ画像 */}
+                  <Link
+                    href={`/posts/${post.slug}`}
+                    className="block relative w-full aspect-video rounded-3xl overflow-hidden mb-5 border border-brand-border bg-brand-bg-soft"
+                  >
+                    <ImageWithFallback
+                      src={post.eyecatch}
+                      alt={post.title}
+                      className="object-cover w-full h-full group-hover:scale-102 transition-transform duration-300"
+                      fallbackSrc="/images/categories/other.png"
+                    />
+                  </Link>
 
-                <div className="flex flex-col justify-between flex-grow">
-                  <div>
-                    <div className="flex items-center gap-3 text-xs font-bold text-brand-muted mb-2">
-                      <span className="text-brand-red">{post.category}</span>
-                      <span>•</span>
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-3.5 h-3.5" />
-                        {post.publishedAt}
-                      </span>
-                    </div>
-                    <Link href={`/posts/${post.slug}`}>
-                      <h3 className="text-lg font-black text-brand-black leading-snug group-hover:text-brand-red transition-colors duration-200 mb-2">
-                        {post.title}
-                      </h3>
+                  <div className="flex items-center gap-3 text-xs font-bold text-brand-muted mb-3">
+                    <span className="text-brand-red">{post.category}</span>
+                    <span>•</span>
+                    <span className="flex items-center gap-1">
+                      <Calendar className="w-3.5 h-3.5" />
+                      {post.publishedAt}
+                    </span>
+                  </div>
+                  
+                  <Link href={`/posts/${post.slug}`}>
+                    <h3 className="text-xl font-black text-brand-black leading-snug group-hover:text-brand-red transition-colors duration-200 mb-3">
+                      {post.title}
+                    </h3>
+                  </Link>
+
+                  <p className="text-sm text-brand-muted font-medium line-clamp-2 leading-relaxed mb-4">
+                    {post.description}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-2">
+                  {post.tags.map((tag) => (
+                    <Link
+                      key={tag}
+                      href={`/tags/${tag}`}
+                      className="text-xs font-bold text-brand-muted hover:text-brand-red transition-colors duration-200"
+                    >
+                      #{tag}
                     </Link>
-                    <p className="text-sm text-brand-muted font-medium line-clamp-2 leading-relaxed mb-3">
-                      {post.description}
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {post.tags.map((tag) => (
-                      <Link
-                        key={tag}
-                        href={`/tags/${tag}`}
-                        className="text-xs font-bold text-brand-muted hover:text-brand-red transition-colors duration-200"
-                      >
-                        #{tag}
-                      </Link>
-                    ))}
-                  </div>
+                  ))}
                 </div>
               </article>
             ))}
