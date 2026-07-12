@@ -7,14 +7,47 @@ tags: ["介護", "Web", "ビジネス"]
 author: "H3 Incover"
 eyecatch: ""
 recommend: false
-relatedPosts: ["web-design-essentials", "start-information-sharing"]
+relatedPosts: ["care-website-absence-problems", "care-website-user-perspective"]
 ---
 
 介護事業所を運営するなかで、「やはりホームページは作ったほうがいいのだろうか」「お金をかけて立派なものを作る余裕はないが、どうすべきか」と悩む声をよく伺います。
 
 結論からお伝えすると、豪華で華美なホームページを作る必要はありません。しかし、**「最低限の正確な情報を載せたWebサイト」は、事業所の信頼性を保つために必要とされる場合があります。**
 
-今回は、なぜ介護事業所にホームページが必要とされるのか、そして掲載しておくべき「最低限の情報」とは何かを整理して解説します。
+今回は、なぜ介護事業所にホームページが必要とされるのか、そこで掲載しておくべき「最低限の情報」とは何かを整理して解説します。
+
+<div class="bg-brand-bg border border-brand-border rounded-3xl p-6 md:p-8 mb-10 space-y-4">
+  <span class="text-xs font-black tracking-widest text-brand-red uppercase block">
+    介護事業所ホームページ改善シリーズ
+  </span>
+  <div class="space-y-3 text-sm font-semibold">
+    <div class="flex items-start gap-2.5 text-brand-black bg-white border border-brand-border p-4 rounded-2xl">
+      <span class="flex-shrink-0 text-brand-red">▶</span>
+      <div>
+        <span class="font-black text-brand-red block text-xs mb-0.5">第1回（この記事）</span>
+        <span>介護事業所にホームページは必要？掲載しておきたい最低限の情報とは</span>
+      </div>
+    </div>
+    <div class="flex items-start gap-2.5 text-brand-muted">
+      <span class="flex-shrink-0 text-brand-red">・</span>
+      <div>
+        <span class="font-black text-brand-black block text-xs mb-0.5">第2回</span>
+        <a href="/posts/care-website-absence-problems" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+          ホームページがないことで起こる5つの困りごと
+        </a>
+      </div>
+    </div>
+    <div class="flex items-start gap-2.5 text-brand-muted">
+      <span class="flex-shrink-0 text-brand-red">・</span>
+      <div>
+        <span class="font-black text-brand-black block text-xs mb-0.5">第3回</span>
+        <a href="/posts/care-website-user-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+          利用者・家族は介護事業所のホームページのどこを見ている？
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## ホームページが安心につながる理由
 
@@ -89,7 +122,25 @@ relatedPosts: ["web-design-essentials", "start-information-sharing"]
 
 まずは自社の情報がWeb上でどう見えているか、検索してみてはいかがでしょうか。基本的な情報を整えることから、少しずつ発信を始めてみてください。
 
----
-**ホームページの基本構造や、情報を整理して伝える「情報設計」の考え方については、以下の記事も参考にしてください。**
-* [Web制作の基本：情報を整えることの重要性](/posts/web-design-essentials)
-* [小さく始める情報発信：何を書けばよいか迷う人のための整理術](/posts/start-information-sharing)
+<div class="mt-12 border-t border-brand-border/60 pt-8 space-y-4">
+  <span class="text-xs font-black text-brand-red tracking-widest uppercase block">
+    あわせて読みたい
+  </span>
+  <p class="text-sm text-brand-muted font-medium">
+    ホームページがなぜ必要とされるのか、また情報発信の方法については、以下の記事も参考にしてください。
+  </p>
+  <ul class="space-y-3 text-sm font-semibold">
+    <li class="flex items-start gap-2.5 text-brand-muted">
+      <span class="text-brand-red">・</span>
+      <a href="/posts/care-website-absence-problems" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+        ホームページがないことで起こる5つの困りごと
+      </a>
+    </li>
+    <li class="flex items-start gap-2.5 text-brand-muted">
+      <span class="text-brand-red">・</span>
+      <a href="/posts/care-website-user-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+        利用者・家族は介護事業所のホームページのどこを見ている？
+      </a>
+    </li>
+  </ul>
+</div>

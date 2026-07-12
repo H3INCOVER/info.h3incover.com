@@ -1,0 +1,148 @@
+---
+title: "利用者・家族は介護事業所のホームページのどこを見ている？｜介護事業所の情報発信"
+description: "介護サービスの利用を検討している利用者やそのご家族は、事業所のホームページでどのような情報を確認しているのでしょうか。気になる項目や見られやすい箇所を整理して解説します。"
+publishedAt: "2026-07-12"
+category: "介護"
+tags: ["介護", "Web", "ビジネス"]
+author: "H3 Incover"
+eyecatch: ""
+recommend: false
+relatedPosts: ["care-website-essentials", "care-website-absence-problems"]
+---
+
+<div class="bg-brand-bg border border-brand-border rounded-3xl p-6 md:p-8 mb-10 space-y-4">
+  <span class="text-xs font-black tracking-widest text-brand-red uppercase block">
+    介護事業所ホームページ改善シリーズ
+  </span>
+  <div class="space-y-3 text-sm font-semibold">
+    <div class="flex items-start gap-2.5 text-brand-muted">
+      <span class="flex-shrink-0 text-brand-red">✓</span>
+      <div>
+        <span class="font-black text-brand-black block text-xs mb-0.5">第1回</span>
+        <a href="/posts/care-website-essentials" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+          介護事業所にホームページは必要？掲載しておきたい最低限の情報とは
+        </a>
+      </div>
+    </div>
+    <div class="flex items-start gap-2.5 text-brand-muted">
+      <span class="flex-shrink-0 text-brand-red">✓</span>
+      <div>
+        <span class="font-black text-brand-black block text-xs mb-0.5">第2回</span>
+        <a href="/posts/care-website-absence-problems" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+          ホームページがないことで起こる5つの困りごと
+        </a>
+      </div>
+    </div>
+    <div class="flex items-start gap-2.5 text-brand-black bg-white border border-brand-border p-4 rounded-2xl">
+      <span class="flex-shrink-0 text-brand-red">▶</span>
+      <div>
+        <span class="font-black text-brand-red block text-xs mb-0.5">第3回（この記事）</span>
+        <span>利用者・家族は介護事業所のホームページのどこを見ている？</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+「いざ介護サービスを利用することになったけれど、どのような事業所を選べばいいのだろう」
+
+多くのご家族にとって、介護サービスの手続きや選択は初めての経験であることが多いため、ケアマネジャーからいくつかの事業所を紹介された際、インターネットでその事業所について調べるケースが見られます。
+
+しかし、そのホームページにたどり着いたご家族が、どのような情報を求めているのかをどのように整理すればいいか、悩むケースも少なくありません。
+
+今回は、利用者やご家族がホームページを閲覧する際に、確認されやすい情報や気になりやすいポイントについて整理して解説します。
+
+## ご家族がホームページを訪れる目的
+
+前提として、介護事業所のホームページを訪れるご家族は、暇つぶしや娯楽のために見ているわけではありません。「大切な家族を安心して預けられる場所なのか」「自分たちの生活パターンに合っているか」という明確な目的を持ってアクセスしています。
+
+そのため、派手なアニメーションや過剰に飾られたイメージ画像よりも、知りたい情報がどこにあるかがすぐに分かること（見つけやすさ）が求められる場合があります。
+
+一般的に、ご家族が利用を検討する過程で確認されやすい情報は、大きく以下の3つの領域に分けられます。
+
+## 1. 「本当に利用できるか」の利用条件
+
+ご家族が最初に確認したいと考えるのは、実務的・物理的にその事業所利用できるかどうかという条件です。どれほど雰囲気の良い事業所であっても、対象地域や営業時間が合わなければ選択肢に入らないためです。
+
+* **送迎や訪問の対象エリア**
+  送迎範囲や訪問エリアが自分の自宅を含んでいるかどうか。市区町村名だけでなく、「〇〇地区」「事業所から車で〇分圏内」などの具体的な目安が記載されていると判断しやすくなります。
+* **営業時間と休業日**
+  平日はもちろん、土日祝日や年末年始の対応状況。特に共働きのご家族の場合、土曜日の営業有無などは利用を決める際の要素になり得ます。
+* **現在の空き状況（目安）**
+  「月水金は比較的空きがあります」「現在は満員ですが、相談は随時受付中」といった状況が少しでも分かると、問い合わせるかどうかの判断基準になります。
+
+## 2. 「安心して預けられるか」の雰囲気と信頼性
+
+利用条件が合致した後に、ご家族が次に気になりやすいのが「どのような環境で、どのような人がケアを行うのか」という情緒的な安心感です。
+
+文字だけの説明では伝わりにくい部分であるため、以下のような視覚的情報が手がかりになります。
+
+* **施設の内観・外観の写真**
+  浴室の設備、レクリエーションスペース、食堂などの明るさや清潔感。広さやバリアフリーの対応状況が伝わる写真があると、利用イメージが湧きやすくなります。
+* **スタッフの様子や紹介（本人の同意やプライバシーへの配慮を前提とする）**
+  事業所の管理者やスタッフの紹介文、日々の関わりが伝わるコメントなど。どのような思いで運営しているかが伝わることで、相談する際の心理的なハードルが下がる場合があります。
+* **日々の活動やレクリエーションの様子**
+  普段の過ごし方や、リハビリテーションの様子など。日常のワンシーンが自然な形で紹介されていると、中の雰囲気が伝わりやすくなります。
+
+## 3. 「いくらかかるのか」の費用感
+
+多くのご家族にとって最も気になるポイントの一つが、毎月の利用料金です。介護保険制度の仕組みは複雑なため、ホームページ上で分かりやすく解説されていると、安心感につながります。
+
+* **自己負担額の目安**
+  介護度ごとの基本料金や、1日あたり・1ヶ月あたりの目安額。
+* **食費やその他実費の項目**
+  食費、おやつ代、レクリエーションの材料費、おむつ代など、保険外で発生する費用の内訳。
+* **加算の有無やその他費用の概要**
+  どのような加算が算定される場合があるのか、その概要。
+
+※実際の料金は、介護度や自己負担の割合（1〜3割）、地域区分や各種加算などによって細かく変動します。そのため、詳細な金額を網羅することが難しい場合でも、特定の介護度における利用シミュレーション例（例：「要介護2で週2回デイサービスを利用した場合の自己負担の目安」など）があるだけで、ご家族が費用感をイメージする手がかりになります。
+
+<div class="my-10 bg-brand-black text-white border border-brand-border rounded-3xl p-6 md:p-8 space-y-4">
+  <span class="text-xs font-black tracking-widest text-brand-red uppercase block flex items-center gap-1.5">
+    <span>💡</span> H3 Incoverの考え方
+  </span>
+  <p class="text-sm md:text-base font-semibold leading-relaxed text-gray-200">
+    ご家族がホームページを訪れるのは、特定の知りたい情報があるからです。<br />
+    派手なデザインよりも、必要な情報が探しやすい整理されたレイアウトを優先することが、ご家族の安心感につながると考えています。
+  </p>
+</div>
+
+## 自社サイトの「ご家族目線」チェックリスト
+
+自社のホームページがご家族にとって分かりやすい状態になっているか、以下の5つのポイントでセルフチェックを行ってみてください。
+
+1. `[ ]` スマートフォンで見たときに、文字サイズが小さすぎず、スクロールだけで主要な情報（住所・電話番号・営業時間）にたどり着けるか
+2. `[ ]` 送迎・訪問エリアが、地元の地理に詳しくない人でも理解できるように明記されているか
+3. `[ ]` 利用料金のページがあり、基本料以外の実費（食事代など）も記載されているか
+4. `[ ]` 事業所の中の様子や雰囲気が伝わる写真（浴室や共用スペースなど）が掲載されているか
+5. `[ ]` 問い合わせ方法（電話番号やメールフォーム）が目立つ位置に分かりやすく表示されているか
+
+## まとめ
+
+ご家族が介護事業所のホームページを見る際、求めているのは派手な宣伝文句ではなく、「自分たちの困りごとを解決してくれる場所なのか」という客観的な情報です。
+
+まずは、上記のチェックリストを参考に、自社のホームページが「ご家族が知りたい情報にスムーズにたどり着ける設計」になっているかどうかを点検してみてはいかがでしょうか。情報を整えることが、信頼される情報発信の第一歩になります。
+
+---
+
+<div class="mt-12 border-t border-brand-border/60 pt-8 space-y-4">
+  <span class="text-xs font-black text-brand-red tracking-widest uppercase block">
+    あわせて読みたい
+  </span>
+  <p class="text-sm text-brand-muted font-medium">
+    ホームページの作成や、必要な情報の整理についてさらに知りたい方は、以下の記事も参考にしてください。
+  </p>
+  <ul class="space-y-3 text-sm font-semibold">
+    <li class="flex items-start gap-2.5 text-brand-muted">
+      <span class="text-brand-red">・</span>
+      <a href="/posts/care-website-essentials" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+        介護事業所にホームページは必要？掲載しておきたい最低限の情報とは
+      </a>
+    </li>
+    <li class="flex items-start gap-2.5 text-brand-muted">
+      <span class="text-brand-red">・</span>
+      <a href="/posts/care-website-absence-problems" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+        ホームページがないことで起こる5つの困りごと
+      </a>
+    </li>
+  </ul>
+</div>
