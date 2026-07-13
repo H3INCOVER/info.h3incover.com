@@ -1,0 +1,193 @@
+---
+title: "ケアマネジャーはホームページを見ている？｜介護事業所の情報発信を考える"
+description: "ケアマネジャーなど、利用者と介護事業所をつなぐ関係者は、ホームページをどのように活用しているのでしょうか。情報発信における役割や整理しておきたい項目の点検について解説します。"
+publishedAt: "2026-07-13"
+category: "介護"
+tags: ["介護", "Web", "ビジネス"]
+author: "H3 Incover"
+eyecatch: ""
+recommend: false
+relatedPosts: ["care-website-essentials", "care-website-absence-problems", "care-website-user-perspective"]
+---
+
+<div class="bg-brand-bg border border-brand-border rounded-3xl p-6 md:p-8 mb-10 space-y-4">
+  <span class="text-xs font-black tracking-widest text-brand-red uppercase block">
+    介護事業所ホームページ改善シリーズ
+  </span>
+  <div class="space-y-3 text-sm font-semibold">
+    <div class="flex items-start gap-2.5 text-brand-muted">
+      <span class="flex-shrink-0 text-brand-red">✓</span>
+      <div>
+        <span class="font-black text-brand-black block text-xs mb-0.5">第1回</span>
+        <a href="/posts/care-website-essentials" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+          介護事業所にホームページは必要？掲載しておきたい最低限の情報とは
+        </a>
+      </div>
+    </div>
+    <div class="flex items-start gap-2.5 text-brand-muted">
+      <span class="flex-shrink-0 text-brand-red">✓</span>
+      <div>
+        <span class="font-black text-brand-black block text-xs mb-0.5">第2回</span>
+        <a href="/posts/care-website-absence-problems" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+          ホームページがないことで起こる5つの困りごと
+        </a>
+      </div>
+    </div>
+    <div class="flex items-start gap-2.5 text-brand-muted">
+      <span class="flex-shrink-0 text-brand-red">✓</span>
+      <div>
+        <span class="font-black text-brand-black block text-xs mb-0.5">第3回</span>
+        <a href="/posts/care-website-user-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+          利用者・家族は介護事業所のホームページのどこを見ている？
+        </a>
+      </div>
+    </div>
+    <div class="flex items-start gap-2.5 text-brand-black bg-white border border-brand-border p-4 rounded-2xl">
+      <span class="flex-shrink-0 text-brand-red">▶</span>
+      <div>
+        <span class="font-black text-brand-red block text-xs mb-0.5">第4回（この記事）</span>
+        <span>ケアマネジャーはホームページを見ている？｜介護事業所の情報発信を考える</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+介護事業所の運営を行うなかで、「ケアマネジャーの方々は、私たちのホームページを見てくれているのだろうか」という疑問を持つこともあるかもしれません。
+
+日々の介護相談やプラン作成などを行う場面において、情報を確認・共有する方法には、電話、FAX、パンフレット、対面でのやり取り、公的な情報検索サービス、Web検索など、さまざまな手段があります。
+
+しかし、「ケアマネジャーはホームページを見るか、見ないか」という二者択一で考えるのではなく、「情報を確認・紹介・共有するプロセスにおいて、Web上の情報がどのような役割を持ち得るのか」を実務に即して整理することが重要です。
+
+今回は、ケアマネジャーをはじめとする地域の関係者と介護事業所との間における、Web上の情報の補完的な役割について解説します。
+
+## ケアマネジャーは必ずホームページを見るわけではない
+
+まず明確にしておきたい前提として、ケアマネジャーが新しい事業所を開拓したり、既存の事業所の情報を確かめたりする際に、必ずホームページを確認するとは言えないという点があります。
+
+事業所を知るきっかけや情報を確認する手段は多岐にわたります。
+* 担当者会議や地域包括支援センターを通じた対面の情報共有
+* 直接配布されるパンフレットや資料のファイリング
+* 事業所からのFAXや郵送物
+* 公的な情報検索サービス（介護サービス情報公表システムなど）
+* 直接の電話問い合わせ
+
+そのため、「ホームページさえ作れば、すぐにケアマネジャーの目に留まり紹介が増える」といった捉え方は実務的ではない場合があります。
+
+一方で、対面や書面でのやり取りがあるからこそ、必要なときに手軽にアクセスできる「確認手段の一つ」としてWeb上の情報が機能する場面があります。
+
+## Web上の情報は「確認手段の一つ」になる
+
+Web上に整理された情報は、営業活動や強引な集客のツールとしてではなく、必要に応じて関係者がアクセスできる「情報の置き場所」として以下の役割を持ち得ます。
+
+* **パンフレット紛失時などの基本情報の確認**
+  手元に紙のパンフレットや資料がない場合でも、事業所名や正確な所在地、電話番号などをインターネット経由で迅速に確かめることができます。
+* **対応しているサービスや対象地域の確認**
+  利用者の自宅が提供エリアに含まれているかどうか、あるいは提供している具体的な曜日や時間帯が合致するかなどを、問い合わせ前に確認する手段の一つになり得ます。
+* **利用者やそのご家族への情報共有**
+  ケアマネジャーがご家族に事業所を紹介する際、ホームページのURLを案内先として共有したり、必要に応じて画面を見ながら情報を確認したりすることで、文字や言葉だけでは伝えにくい施設の特徴を案内する手助けになる場合があります。
+
+### ※動的情報の掲載に関する注意点
+「リアルタイムの空き状況」などの更新頻度が高い情報は、もし情報が古くなっていると確認する側を迷わせる原因になりかねません。ホームページに掲載する場合は、単に空き状況を示すだけでなく、「最終更新日：〇月〇日現在」など、閲覧者にとって最新情報であることが確認できる配慮が必要となります。もし頻繁な更新管理が難しい場合は、あらかじめ「詳細な空き状況はお電話にてお問い合わせください」と明記しておくのも実務的な選択肢です。
+
+## 関係者が確認しやすい情報の整理
+
+ここで挙げる項目が、すべてのサービス種別に共通する必須項目というわけではありません。提供するサービス種別（通所、訪問、入所など）によって求められる内容は異なりますが、一般的に関係者が状況に応じて確かめやすい項目には以下のようなものがあります。
+
+* **事業所の基本情報**（名称、法人名、所在地・アクセスマップ、電話番号・連絡先）
+* **提供サービスと対応地域**
+* **営業日・営業時間・休業日**（土日祝日や年末年始の対応状況など）
+* **事業所の特徴や設備内容**
+* **公表している重要書類の案内**（重要事項説明書や利用規約など）
+* **お問い合わせ窓口**
+
+なお、介護報酬における具体的な加算体制は、制度改定や事業所の算定状況などによって変わる可能性があるため、Web上に詳細な表を固定することは、かえって誤解を招く場合があります。安易な詳細掲載は避け、「加算の算定状況の詳細については、直接お問い合わせいただくか、重要事項説明書をご確認ください」といった案内に留めるなど、正確性を担保できる運用を考慮することが大切です。
+
+## 公式ホームページだけが情報源ではない
+
+事業所に関する正確な情報は、自社の公式ホームページだけで提供されているわけではありません。
+
+厚生労働省が運営する「介護サービス情報公表システム」をはじめとする公的な検索サイトでは、事業所の設備の状況や従業者情報、利用料などが、統一されたルールのもとで公表されています。
+
+したがって、「公式ホームページがなければ、第三者が情報を確認できない」というわけではありません。
+
+そのうえで、自社でホームページを管理することには、以下のような補完的な役割が考えられます。
+* **独自の情報を補足できる**：公的なシステムに掲載しきれない、事業所独自の雰囲気やケアに対する思いを表現できる。
+* **ご家族への案内先としての役割**：利用者や家族に向けて、自社の情報を分かりやすく整理した案内先を持てる。
+* **情報の自律的な整理**：事業所自身が、伝えたい情報を適切な優先順位で発信できる。
+
+情報源は一つではないからこそ、それぞれの役割を理解し、補完し合う形を目指すのが実務的です。
+
+## 情報は「あること」よりも「整理され、更新されていること」が重要
+
+ホームページに膨大な情報が詰め込まれていても、数年前の古い情報が放置されていれば、確認する側に不安を与えてしまう場合があります。
+
+例えば、移転前の古い所在地や、変更前の営業時間が残っている状態は、実務上の確認を妨げかねません。
+
+大切なのは、「情報の量の多さ」よりも、「掲載されている基本情報が正確であり、変更があった際には確実に見直せる状態になっていること」です。
+
+まずは、情報の鮮度を保てるだけの「小さく、整理された状態」から始めることが、閲覧する関係者の安心感へとつながります。
+
+<div class="my-10 bg-brand-black text-white border border-brand-border rounded-3xl p-6 md:p-8 space-y-4">
+  <span class="text-xs font-black tracking-widest text-brand-red uppercase block flex items-center gap-1.5">
+    <span>💡</span> H3 Incoverの考え方
+  </span>
+  <p class="text-sm md:text-base font-semibold leading-relaxed text-gray-200">
+    ホームページは、介護事業所と利用者・家族・地域の関係者をつなぐ「情報の確認先の一つ」です。<br />
+    豪華なデザインや過剰な情報量を目指すのではなく、「必要な情報が、必要なときに、迷わず確認できる状態」を整えることを重視しています。
+  </p>
+</div>
+
+## 「関係者目線」の情報確認チェックリスト
+
+自社のホームページが、関係者にとって迷わずに必要な情報へたどり着ける状態になっているか、以下の自己点検項目を参考に確認してみてください。
+
+1. `[ ]` 事業所の基本情報（名称・住所・連絡先）が、トップページなどの分かりやすい場所にすぐ見つかるか
+2. `[ ]` 提供している具体的なサービス内容が分かりやすく示されているか
+3. `[ ]` 送迎や訪問の対象地域が明確に確認できるか
+4. `[ ]` 営業日・営業時間・休業日（土日祝日や年末年始などの対応状況）が明記されているか
+5. `[ ]` 問い合わせ先（電話番号やフォームなど）への導線が分かりやすいか
+6. `[ ]` 掲載されているすべての情報が、現在の事業所の運営内容と一致しているか
+7. `[ ]` 利用者やご家族に「ここを見てください」と迷わず案内できるシンプルなページ構成になっているか
+
+## まとめ
+
+ケアマネジャーなどの関係者が必ずホームページを見るとは言えませんし、地域や状況によって情報収集の手段は多様です。
+
+それでも、Web上に整理された情報があることは、必要なときに情報を確認する手段の一つになり得ます。
+
+重要なのは、「見てもらうこと」だけを目的にして過剰に飾るのではなく、必要な人が必要なときに、安心して確認できる情報の置き場所を整えておくことです。基本情報を正確に整理することから、少しずつ情報発信のあり方を見直してみてはいかがでしょうか。
+
+---
+
+では、事業所をWebで探すとき、Google検索とGoogleマップにはどのような違いがあるのでしょうか。
+
+次回は、シリーズ第5回「Google検索とGoogleマップの違い」として、それぞれの検索の特徴と事業所側の対応について整理します。
+
+<div class="mt-12 border-t border-brand-border/60 pt-8 space-y-4">
+  <span class="text-xs font-black text-brand-red tracking-widest uppercase block">
+    あわせて読みたい
+  </span>
+  <p class="text-sm text-brand-muted font-medium">
+    介護事業所の情報発信や、利用者・ご家族側の視点については、以下の記事も参考にしてください。
+  </p>
+  <ul class="space-y-3 text-sm font-semibold">
+    <li class="flex items-start gap-2.5 text-brand-muted">
+      <span class="text-brand-red">・</span>
+      <a href="/posts/care-website-essentials" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+        介護事業所にホームページは必要？掲載しておきたい最低限の情報とは
+      </a>
+    </li>
+    <li class="flex items-start gap-2.5 text-brand-muted">
+      <span class="text-brand-red">・</span>
+      <a href="/posts/care-website-absence-problems" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+        ホームページがないことで起こる5つの困りごと
+      </a>
+    </li>
+    <li class="flex items-start gap-2.5 text-brand-muted">
+      <span class="text-brand-red">・</span>
+      <a href="/posts/care-website-user-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+        利用者・家族は介護事業所のホームページのどこを見ている？
+      </a>
+    </li>
+  </ul>
+</div>

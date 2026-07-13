@@ -7,7 +7,7 @@ tags: ["介護", "Web", "ビジネス"]
 author: "H3 Incover"
 eyecatch: ""
 recommend: false
-relatedPosts: ["care-website-absence-problems", "care-website-user-perspective"]
+relatedPosts: ["care-website-absence-problems", "care-website-user-perspective", "care-website-caremanager-perspective"]
 ---
 
 介護事業所を運営するなかで、「やはりホームページは作ったほうがいいのだろうか」「お金をかけて立派なものを作る余裕はないが、どうすべきか」と悩む声をよく伺います。
@@ -43,6 +43,15 @@ relatedPosts: ["care-website-absence-problems", "care-website-user-perspective"]
         <span class="font-black text-brand-black block text-xs mb-0.5">第3回</span>
         <a href="/posts/care-website-user-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
           利用者・家族は介護事業所のホームページのどこを見ている？
+        </a>
+      </div>
+    </div>
+    <div class="flex items-start gap-2.5 text-brand-muted">
+      <span class="flex-shrink-0 text-brand-red">・</span>
+      <div>
+        <span class="font-black text-brand-black block text-xs mb-0.5">第4回</span>
+        <a href="/posts/care-website-caremanager-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+          ケアマネジャーはホームページを見ている？｜介護事業所の情報発信を考える
         </a>
       </div>
     </div>
@@ -127,7 +136,7 @@ relatedPosts: ["care-website-absence-problems", "care-website-user-perspective"]
     あわせて読みたい
   </span>
   <p class="text-sm text-brand-muted font-medium">
-    ホームページがなぜ必要とされるのか、また情報発信の方法については、以下の記事も参考にしてください。
+    ホームページがなぜ必要とされるのか、また関係者からの見え方については、以下の記事も参考にしてください。
   </p>
   <ul class="space-y-3 text-sm font-semibold">
     <li class="flex items-start gap-2.5 text-brand-muted">
@@ -140,6 +149,12 @@ relatedPosts: ["care-website-absence-problems", "care-website-user-perspective"]
       <span class="text-brand-red">・</span>
       <a href="/posts/care-website-user-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
         利用者・家族は介護事業所のホームページのどこを見ている？
+      </a>
+    </li>
+    <li class="flex items-start gap-2.5 text-brand-muted">
+      <span class="text-brand-red">・</span>
+      <a href="/posts/care-website-caremanager-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+        ケアマネジャーはホームページを見ている？｜介護事業所の情報発信を考える
       </a>
     </li>
   </ul>

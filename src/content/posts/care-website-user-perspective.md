@@ -7,7 +7,7 @@ tags: ["介護", "Web", "ビジネス"]
 author: "H3 Incover"
 eyecatch: ""
 recommend: false
-relatedPosts: ["care-website-essentials", "care-website-absence-problems"]
+relatedPosts: ["care-website-essentials", "care-website-absence-problems", "care-website-caremanager-perspective"]
 ---
 
 <div class="bg-brand-bg border border-brand-border rounded-3xl p-6 md:p-8 mb-10 space-y-4">
@@ -38,6 +38,15 @@ relatedPosts: ["care-website-essentials", "care-website-absence-problems"]
       <div>
         <span class="font-black text-brand-red block text-xs mb-0.5">第3回（この記事）</span>
         <span>利用者・家族は介護事業所のホームページのどこを見ている？</span>
+      </div>
+    </div>
+    <div class="flex items-start gap-2.5 text-brand-muted">
+      <span class="flex-shrink-0 text-brand-red">・</span>
+      <div>
+        <span class="font-black text-brand-black block text-xs mb-0.5">第4回</span>
+        <a href="/posts/care-website-caremanager-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+          ケアマネジャーはホームページを見ている？｜介護事業所の情報発信を考える
+        </a>
       </div>
     </div>
   </div>
@@ -129,7 +138,7 @@ relatedPosts: ["care-website-essentials", "care-website-absence-problems"]
     あわせて読みたい
   </span>
   <p class="text-sm text-brand-muted font-medium">
-    ホームページの作成や、必要な情報の整理についてさらに知りたい方は、以下の記事も参考にしてください。
+    介護事業所の情報発信や、関係者からの見え方については、以下の記事も参考にしてください。
   </p>
   <ul class="space-y-3 text-sm font-semibold">
     <li class="flex items-start gap-2.5 text-brand-muted">
@@ -142,6 +151,12 @@ relatedPosts: ["care-website-essentials", "care-website-absence-problems"]
       <span class="text-brand-red">・</span>
       <a href="/posts/care-website-absence-problems" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
         ホームページがないことで起こる5つの困りごと
+      </a>
+    </li>
+    <li class="flex items-start gap-2.5 text-brand-muted">
+      <span class="text-brand-red">・</span>
+      <a href="/posts/care-website-caremanager-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
+        ケアマネジャーはホームページを見ている？｜介護事業所の情報発信を考える
       </a>
     </li>
   </ul>
