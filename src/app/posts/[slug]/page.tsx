@@ -5,6 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import TableOfContents from '@/components/TableOfContents';
 import ShareButtons from '@/components/ShareButtons';
 import ImageWithFallback from '@/components/ImageWithFallback';
+import SeriesNavigation from '@/components/SeriesNavigation';
 import { Calendar, RefreshCw, User, Folder, Tag, ArrowRight } from 'lucide-react';
 import { Metadata } from 'next';
 
@@ -150,6 +151,11 @@ export default async function PostPage({ params }: PostPageProps) {
 
           {/* 目次 */}
           <TableOfContents headings={headings} />
+
+          {/* シリーズナビゲーション */}
+          {post.series && (
+            <SeriesNavigation seriesId={post.series} currentSlug={slug} />
+          )}
 
           {/* 本文 */}
           <div

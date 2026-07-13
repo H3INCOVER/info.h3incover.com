@@ -19,6 +19,7 @@ export interface Post {
   contentHtml: string;
   relatedPosts?: string[];
   recommend?: boolean;
+  series?: string;
 }
 
 export interface TocHeading {
@@ -65,6 +66,7 @@ export function getSortedPostsData(): Post[] {
         eyecatch: getValidatedEyecatch(matterResult.data.eyecatch, matterResult.data.category || ''),
         recommend: matterResult.data.recommend || false,
         relatedPosts: matterResult.data.relatedPosts || [],
+        series: matterResult.data.series || undefined,
         body: matterResult.content,
         contentHtml: '',
       } as Post;
@@ -116,6 +118,7 @@ export async function getPostData(slug: string): Promise<Post | null> {
     eyecatch: getValidatedEyecatch(matterResult.data.eyecatch, matterResult.data.category || ''),
     recommend: matterResult.data.recommend || false,
     relatedPosts: matterResult.data.relatedPosts || [],
+    series: matterResult.data.series || undefined,
     body: matterResult.content,
     contentHtml,
   } as Post;

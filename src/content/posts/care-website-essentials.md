@@ -8,6 +8,7 @@ author: "H3 Incover"
 eyecatch: ""
 recommend: false
 relatedPosts: ["care-website-absence-problems", "care-website-user-perspective", "care-website-caremanager-perspective"]
+series: "care-website-improvement"
 ---
 
 介護事業所を運営するなかで、「やはりホームページは作ったほうがいいのだろうか」「お金をかけて立派なものを作る余裕はないが、どうすべきか」と悩む声をよく伺います。
@@ -16,47 +17,6 @@ relatedPosts: ["care-website-absence-problems", "care-website-user-perspective",
 
 今回は、なぜ介護事業所にホームページが必要とされるのか、そこで掲載しておくべき「最低限の情報」とは何かを整理して解説します。
 
-<div class="bg-brand-bg border border-brand-border rounded-3xl p-6 md:p-8 mb-10 space-y-4">
-  <span class="text-xs font-black tracking-widest text-brand-red uppercase block">
-    介護事業所ホームページ改善シリーズ
-  </span>
-  <div class="space-y-3 text-sm font-semibold">
-    <div class="flex items-start gap-2.5 text-brand-black bg-white border border-brand-border p-4 rounded-2xl">
-      <span class="flex-shrink-0 text-brand-red">▶</span>
-      <div>
-        <span class="font-black text-brand-red block text-xs mb-0.5">第1回（この記事）</span>
-        <span>介護事業所にホームページは必要？掲載しておきたい最低限の情報とは</span>
-      </div>
-    </div>
-    <div class="flex items-start gap-2.5 text-brand-muted">
-      <span class="flex-shrink-0 text-brand-red">・</span>
-      <div>
-        <span class="font-black text-brand-black block text-xs mb-0.5">第2回</span>
-        <a href="/posts/care-website-absence-problems" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
-          ホームページがないことで起こる5つの困りごと
-        </a>
-      </div>
-    </div>
-    <div class="flex items-start gap-2.5 text-brand-muted">
-      <span class="flex-shrink-0 text-brand-red">・</span>
-      <div>
-        <span class="font-black text-brand-black block text-xs mb-0.5">第3回</span>
-        <a href="/posts/care-website-user-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
-          利用者・家族は介護事業所のホームページのどこを見ている？
-        </a>
-      </div>
-    </div>
-    <div class="flex items-start gap-2.5 text-brand-muted">
-      <span class="flex-shrink-0 text-brand-red">・</span>
-      <div>
-        <span class="font-black text-brand-black block text-xs mb-0.5">第4回</span>
-        <a href="/posts/care-website-caremanager-perspective" class="hover:text-brand-red border-b border-brand-border pb-0.5 transition-colors">
-          ケアマネジャーはホームページを見ている？｜介護事業所の情報発信を考える
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
 ## ホームページが安心につながる理由
 
