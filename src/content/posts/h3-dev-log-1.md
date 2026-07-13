@@ -7,7 +7,7 @@ tags: ["H3開発日誌", "Web", "Next.js"]
 author: "Hiroshi Hiraoka"
 eyecatch: "/images/blog/dev-log.jpg"
 recommend: false
-relatedPosts: ["web-design-essentials", "navi-cover-release"]
+relatedPosts: ["web-design-essentials"]
 ---
 
 ## 新規構築の背景

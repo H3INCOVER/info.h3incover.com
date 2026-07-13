@@ -189,7 +189,7 @@ export default async function PostPage({ params }: PostPageProps) {
               ホームページや情報発信について相談したい方はこちら
             </h2>
             <p className="text-sm text-brand-muted font-medium leading-relaxed max-w-2xl mx-auto">
-              H3 Incoverでは、介護事業所向けのホームページ制作（Navi-Cover）のほか、Web制作、情報・導線設計、情報発信に関する各種ご相談やサポートを承っております。まずはお気軽にお問い合わせください。
+              H3 Incoverでは、介護事業所向けのホームページ制作のほか、Web制作、情報・導線設計、情報発信に関する各種ご相談やサポートを承っております。まずはお気軽にお問い合わせください。
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-2">
               <a

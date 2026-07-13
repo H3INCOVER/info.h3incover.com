@@ -70,7 +70,7 @@ export default function AboutPage() {
           <section className="bg-brand-bg/50 border border-brand-border rounded-2xl p-6 md:p-8 space-y-4 mt-12">
             <h3 className="text-lg font-black text-brand-black">お問い合わせ・ご相談</h3>
             <p className="text-sm text-brand-muted">
-              介護事業所向けのホームページ作成サービス「Navi-Cover」や、オーダーメイドのWeb制作、情報設計のご相談、また本メディアの記事に関するご質問は、以下よりお気軽にお問い合わせください。
+              介護事業所向けのホームページ制作サービスや、オーダーメイドのWeb制作、情報設計のご相談、また本メディアの記事に関するご質問は、以下よりお気軽にお問い合わせください。
             </p>
             <div className="pt-2">
               <a
