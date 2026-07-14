@@ -19,6 +19,7 @@ export const seriesList: Series[] = [
       { title: "利用者・家族は介護事業所のホームページのどこを見ている？", slug: "care-website-user-perspective" },
       { title: "ケアマネジャーはホームページを見ている？｜介護事業所の情報発信を考える", slug: "care-website-caremanager-perspective" },
       { title: "Google検索とGoogleマップの違い｜介護事業所の情報への入口を整える", slug: "care-website-search-and-map" },
+      { title: "介護事業所のホームページに最低限載せたい情報10項目", slug: "care-website-minimum-items" },
     ]
   }
 ];
