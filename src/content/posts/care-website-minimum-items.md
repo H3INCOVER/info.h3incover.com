@@ -9,6 +9,7 @@ eyecatch: ""
 recommend: false
 relatedPosts: ["care-website-user-perspective", "care-website-caremanager-perspective"]
 series: "care-website-improvement"
+publishedOrder: 6
 ---
 
 介護サービスを検討するご家族や、地域包括支援センター・居宅介護支援事業所のケアマネジャーなどの関係者が、事業所の情報をWeb上で確認することがあります。

@@ -20,6 +20,7 @@ export interface Post {
   relatedPosts?: string[];
   recommend?: boolean;
   series?: string;
+  publishedOrder?: number;
 }
 
 export interface TocHeading {
@@ -67,6 +68,7 @@ export function getSortedPostsData(): Post[] {
         recommend: matterResult.data.recommend || false,
         relatedPosts: matterResult.data.relatedPosts || [],
         series: matterResult.data.series || undefined,
+        publishedOrder: matterResult.data.publishedOrder !== undefined ? Number(matterResult.data.publishedOrder) : undefined,
         body: matterResult.content,
         contentHtml: '',
       } as Post;
@@ -75,8 +77,12 @@ export function getSortedPostsData(): Post[] {
   return allPostsData.sort((a, b) => {
     if (a.publishedAt < b.publishedAt) {
       return 1;
-    } else {
+    } else if (a.publishedAt > b.publishedAt) {
       return -1;
+    } else {
+      const orderA = a.publishedOrder !== undefined ? a.publishedOrder : 0;
+      const orderB = b.publishedOrder !== undefined ? b.publishedOrder : 0;
+      return orderB - orderA;
     }
   });
 }

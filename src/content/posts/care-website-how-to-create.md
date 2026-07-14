@@ -9,6 +9,7 @@ eyecatch: ""
 recommend: false
 relatedPosts: ["care-website-essentials", "care-website-minimum-items"]
 series: "care-website-improvement"
+publishedOrder: 7
 ---
 
 前回の記事では、介護事業所のホームページに最低限掲載しておきたい基本情報10項目について整理しました。掲載すべき内容が整理できたら、次に検討するのは「それをどうやって具体的なウェブサイトの形にするか」という制作方法です。
