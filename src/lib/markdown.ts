@@ -38,6 +38,10 @@ customRenderer.heading = function({ text, depth }) {
     .replace(/[^\w\u4e00-\u9fa5\u3040-\u309f\u30a0-\u30ff\-]+/g, '-');
   return `<h${depth} id="${escapedText}">${text}</h${depth}>`;
 };
+customRenderer.table = function(token) {
+  const html = marked.Renderer.prototype.table.call(this, token);
+  return `<div class="prose-table-wrapper">${html}</div>`;
+};
 marked.use({ renderer: customRenderer });
 
 // 記事の一覧を取得 (日付順降順)

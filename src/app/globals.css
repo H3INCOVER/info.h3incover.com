@@ -91,3 +91,55 @@ body {
 .prose a:hover {
   color: var(--color-red-deep);
 }
+
+/* ==========================================
+   テーブル（比較表）の拡張スタイル
+   ========================================== */
+
+/* 1. 横スクロールおよびレイアウト */
+.prose-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* PC（1024px以上）では左右に80pxずつはみ出させ、実質幅を928pxまで広げる */
+@media (min-width: 1024px) {
+  .prose-table-wrapper {
+    margin-left: -80px;
+    margin-right: -80px;
+    width: calc(100% + 160px);
+  }
+}
+
+/* 2. テーブル全体のスタイル */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem; /* 可読性と情報量のバランスを取るため少し小さく */
+  line-height: 1.6;
+}
+
+/* 3. 各列の十分な横幅の確保 */
+.prose th, .prose td {
+  padding: 1rem 0.8rem;
+  border-bottom: 1px solid var(--color-border);
+  min-width: 180px; /* セルが潰れて細切れ改行されるのを防止 */
+}
+
+/* 比較軸（最初の列）だけは少し狭くてもよいため最小幅を小さく指定 */
+.prose td:first-child,
+.prose th:first-child {
+  min-width: 110px;
+}
+
+/* 4. ヘッダー行の視覚的強調 */
+.prose thead th {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-weight: 800;
+  border-bottom: 2px solid var(--color-red);
+}
