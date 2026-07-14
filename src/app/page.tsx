@@ -43,71 +43,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. Featured (おすすめ記事) */}
-      {featuredPosts.length > 0 && (
-        <section className="py-16 md:py-24 border-b border-brand-border bg-brand-bg/30">
-          <div className="max-w-[1120px] mx-auto px-5">
-            <div className="flex items-center justify-between mb-10">
-              <div>
-                <span className="text-xs font-black tracking-widest text-brand-red uppercase mb-1 block">
-                  Featured
-                </span>
-                <h2 className="text-2xl md:text-3xl font-black text-brand-black tracking-tight">
-                  おすすめ記事
-                </h2>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {featuredPosts.map((post) => (
-                <article
-                  key={post.slug}
-                  className="bg-white border border-brand-border rounded-3xl p-6 md:p-8 flex flex-col justify-between hover:shadow-soft hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div>
-                    {/* アイキャッチ画像 */}
-                    <Link
-                      href={`/posts/${post.slug}`}
-                      className="block relative w-full aspect-video rounded-2xl overflow-hidden mb-5 border border-brand-border bg-brand-bg-soft"
-                    >
-                      <ImageWithFallback
-                        src={post.eyecatch}
-                        alt={post.title}
-                        className="object-cover w-full h-full hover:scale-102 transition-transform duration-300"
-                        fallbackSrc="/images/categories/other.png"
-                      />
-                    </Link>
-
-                    <div className="flex items-center gap-3 text-xs font-bold text-brand-muted mb-4">
-                      <span className="bg-brand-bg text-brand-black px-2.5 py-1 rounded-full">
-                        {post.category}
-                      </span>
-                      <span>{post.publishedAt}</span>
-                    </div>
-                    <Link href={`/posts/${post.slug}`} className="group">
-                      <h3 className="text-lg font-black text-brand-black leading-snug group-hover:text-brand-red transition-colors duration-200 mb-3">
-                        {post.title}
-                      </h3>
-                    </Link>
-                    <p className="text-sm text-brand-muted font-medium line-clamp-3 leading-relaxed mb-6">
-                      {post.description}
-                    </p>
-                  </div>
-                  <Link
-                    href={`/posts/${post.slug}`}
-                    className="inline-flex items-center text-xs font-black tracking-wider text-brand-black border-b-2 border-brand-red pb-0.5 self-start hover:text-brand-red transition-colors duration-200"
-                  >
-                    続きを読む
-                    <ArrowRight className="w-3.5 h-3.5 ml-1" />
-                  </Link>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* 3. Latest (新着記事) */}
+      {/* 2. Latest (新着記事) */}
       <section className="py-16 md:py-24 border-b border-brand-border">
         <div className="max-w-[1120px] mx-auto px-5">
           <div className="flex items-center justify-between mb-10">
@@ -181,6 +117,70 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* 3. Featured (おすすめ記事) */}
+      {featuredPosts.length > 0 && (
+        <section className="py-16 md:py-24 border-b border-brand-border bg-brand-bg/30">
+          <div className="max-w-[1120px] mx-auto px-5">
+            <div className="flex items-center justify-between mb-10">
+              <div>
+                <span className="text-xs font-black tracking-widest text-brand-red uppercase mb-1 block">
+                  Featured
+                </span>
+                <h2 className="text-2xl md:text-3xl font-black text-brand-black tracking-tight">
+                  おすすめ記事
+                </h2>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {featuredPosts.map((post) => (
+                <article
+                  key={post.slug}
+                  className="bg-white border border-brand-border rounded-3xl p-6 md:p-8 flex flex-col justify-between hover:shadow-soft hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div>
+                    {/* アイキャッチ画像 */}
+                    <Link
+                      href={`/posts/${post.slug}`}
+                      className="block relative w-full aspect-video rounded-2xl overflow-hidden mb-5 border border-brand-border bg-brand-bg-soft"
+                    >
+                      <ImageWithFallback
+                        src={post.eyecatch}
+                        alt={post.title}
+                        className="object-cover w-full h-full hover:scale-102 transition-transform duration-300"
+                        fallbackSrc="/images/categories/other.png"
+                      />
+                    </Link>
+
+                    <div className="flex items-center gap-3 text-xs font-bold text-brand-muted mb-4">
+                      <span className="bg-brand-bg text-brand-black px-2.5 py-1 rounded-full">
+                        {post.category}
+                      </span>
+                      <span>{post.publishedAt}</span>
+                    </div>
+                    <Link href={`/posts/${post.slug}`} className="group">
+                      <h3 className="text-lg font-black text-brand-black leading-snug group-hover:text-brand-red transition-colors duration-200 mb-3">
+                        {post.title}
+                      </h3>
+                    </Link>
+                    <p className="text-sm text-brand-muted font-medium line-clamp-3 leading-relaxed mb-6">
+                      {post.description}
+                    </p>
+                  </div>
+                  <Link
+                    href={`/posts/${post.slug}`}
+                    className="inline-flex items-center text-xs font-black tracking-wider text-brand-black border-b-2 border-brand-red pb-0.5 self-start hover:text-brand-red transition-colors duration-200"
+                  >
+                    続きを読む
+                    <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                  </Link>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* 4. Categories */}
       <section className="py-16 md:py-24 border-b border-brand-border bg-brand-bg/10">

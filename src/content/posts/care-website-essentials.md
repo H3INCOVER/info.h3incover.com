@@ -6,7 +6,7 @@ category: "介護"
 tags: ["介護", "Web", "ビジネス"]
 author: "H3 Incover"
 eyecatch: ""
-recommend: false
+recommend: true
 relatedPosts: ["care-website-absence-problems", "care-website-user-perspective", "care-website-caremanager-perspective"]
 series: "care-website-improvement"
 ---
