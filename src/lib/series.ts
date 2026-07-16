@@ -21,6 +21,7 @@ export const seriesList: Series[] = [
       { title: "Google検索とGoogleマップの違い｜介護事業所の情報への入口を整える", slug: "care-website-search-and-map" },
       { title: "介護事業所のホームページに最低限載せたい情報10項目", slug: "care-website-minimum-items" },
       { title: "介護事業所のホームページは自作？制作会社？3つの作り方を比較", slug: "care-website-how-to-create" },
+      { title: "介護事業所に合ったホームページ制作パートナーの選び方｜依頼前に確認したいポイント", slug: "care-website-agency-selection" },
     ]
   }
 ];
