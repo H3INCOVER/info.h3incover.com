@@ -22,6 +22,7 @@ export const seriesList: Series[] = [
       { title: "介護事業所のホームページに最低限載せたい情報10項目", slug: "care-website-minimum-items" },
       { title: "介護事業所のホームページは自作？制作会社？3つの作り方を比較", slug: "care-website-how-to-create" },
       { title: "介護事業所に合ったホームページ制作パートナーの選び方｜依頼前に確認したいポイント", slug: "care-website-agency-selection" },
+      { title: "介護ホームページの見積書はどう比べる？「誰が何をするか」を確認する4つのポイント", slug: "care-website-estimate-scope" },
     ]
   }
 ];
