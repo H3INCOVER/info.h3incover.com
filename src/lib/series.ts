@@ -23,6 +23,7 @@ export const seriesList: Series[] = [
       { title: "介護事業所のホームページは自作？制作会社？3つの作り方を比較", slug: "care-website-how-to-create" },
       { title: "介護事業所に合ったホームページ制作パートナーの選び方｜依頼前に確認したいポイント", slug: "care-website-agency-selection" },
       { title: "介護ホームページの見積書はどう比べる？「誰が何をするか」を確認する4つのポイント", slug: "care-website-estimate-scope" },
+      { title: "介護ホームページの「保守契約」は何のため？月額料金より確かめたい「何をしてくれるか」", slug: "care-website-maintenance-contract" },
     ]
   }
 ];
