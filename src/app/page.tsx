@@ -12,17 +12,17 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* 1. Hero Section */}
-      <section className="bg-white border-b border-brand-border py-20 md:py-32">
+      <section className="hero-section border-b border-brand-border py-20 md:py-32">
         <div className="max-w-[1120px] mx-auto px-5">
           <div className="max-w-3xl">
             <span className="text-xs font-black tracking-widest text-brand-red uppercase mb-4 block">
               H3 Incover Info
             </span>
             <h1 className="text-4xl md:text-6xl font-black text-brand-black leading-tight tracking-tight mb-6">
-              情報を、<br className="md:hidden" /><span className="text-brand-red">届く形</span>に整えるための記録。
+              介護とWEB
             </h1>
             <p className="text-lg md:text-xl text-brand-muted font-semibold leading-relaxed mb-8">
-              AI、介護、Web、営業、情報設計について、日々の現場で実践しながら学んだことを整理した知識庫・研究ノートメディアです。
+              介護事業所のWebまわりの情報まとめ。
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -211,44 +211,26 @@ export default function Home() {
       {/* 5. About */}
       <section className="py-16 md:py-24 border-b border-brand-border">
         <div className="max-w-[1120px] mx-auto px-5">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="text-xs font-black tracking-widest text-brand-red uppercase mb-1 block">
-                About Media
-              </span>
-              <h2 className="text-3xl font-black text-brand-black tracking-tight mb-6">
-                H3 Incover Info について
-              </h2>
-              <div className="text-brand-muted font-medium space-y-4 text-base leading-relaxed">
-                <p>
-                  このメディアは、Webデザインおよび情報設計を行う H3 Incover（エイチスリー・インカバー）の情報発信拠点です。
-                </p>
-                <p>
-                  派手なトレンドニュースを追うのではなく、日々の介護現場のDX支援、Webサイトの制作、営業、そして情報の整理設計といった実務を通して得られた知見を蓄積する「研究ノート」または「知識庫」として運営しています。
-                </p>
-                <p>
-                  「小さく、軽く、続けられる設計」を体現したこの静的サイトは、情報を必要としている人へと届く形に整える試みの一つです。
-                </p>
-              </div>
-            </div>
-            <div className="bg-brand-bg rounded-3xl p-8 border border-brand-border flex flex-col justify-center">
-              <span className="text-xs font-black tracking-widest text-brand-muted uppercase mb-4 block">
-                Core Philosophy
-              </span>
-              <ul className="space-y-4 text-sm font-bold text-brand-black">
-                <li className="flex items-start gap-3">
-                  <span className="text-brand-red font-black">01</span>
-                  <span>見つけられる状態を、設計する。</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-brand-red font-black">02</span>
-                  <span>情報・導線・Web設計で必要を届ける。</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-brand-red font-black">03</span>
-                  <span>小さく、軽く、続けられる運用設計。</span>
-                </li>
-              </ul>
+          <div className="bg-brand-bg border border-brand-border rounded-3xl p-8 md:p-12 max-w-4xl mx-auto">
+            <span className="text-xs font-black tracking-widest text-brand-red uppercase mb-2 block">
+              About Media
+            </span>
+            <h2 className="text-2xl md:text-3xl font-black text-brand-black tracking-tight mb-6">
+              H3 Incover Info について
+            </h2>
+            <div className="text-brand-muted font-medium space-y-4 text-base md:text-lg leading-relaxed">
+              <p>
+                介護事業所のWebまわりで役立つ情報をまとめています。
+              </p>
+              <p>
+                ホームページ、サーバー、ドメイン、Google検索、AI活用など、Webに関する言葉や仕組みをできるだけ分かりやすく紹介しています。
+              </p>
+              <p>
+                「何から始めればいいのか分からない」「この言葉の意味が分からない」という時に、気軽に立ち寄れる場所を目指しています。
+              </p>
+              <p className="pt-2 text-brand-black font-semibold">
+                少しでも皆さまのお役に立てれば幸いです。
+              </p>
             </div>
           </div>
         </div>
