@@ -25,6 +25,7 @@ export const seriesList: Series[] = [
       { title: "介護ホームページの見積書はどう比べる？「誰が何をするか」を確認する4つのポイント", slug: "care-website-estimate-scope" },
       { title: "介護ホームページの「保守契約」は何のため？月額料金より確かめたい「何をしてくれるか」", slug: "care-website-maintenance-contract" },
       { title: "介護ホームページのドメイン・サーバー名義は誰のもの？契約前に確かめたい「将来困らないため」の確認ポイント", slug: "care-website-domain-server-ownership" },
+      { title: "ホームページ解約時のトラブルを防ぐ！著作権とデータ引き渡しのルール", slug: "care-website-copyright-cancellation" },
     ]
   }
 ];
