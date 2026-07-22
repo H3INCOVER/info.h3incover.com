@@ -8,7 +8,7 @@ tags: ["AI", "介護", "DX"]
 author: "Hiroshi Hiraoka"
 eyecatch: "/images/blog/ai-care.jpg"
 recommend: true
-relatedPosts: ["h3-dev-log-1"]
+relatedPosts: []
 ---
 
 ## 介護現場が直面する課題とAIの親和性

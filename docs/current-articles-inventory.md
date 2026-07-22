@@ -16,7 +16,7 @@
 *   **tags**: `AI`, `介護`, `DX`
 *   **series**: (未設定)
 *   **description**: 介護業界の人手不足や業務効率化の課題に対し、AI技術がどのように貢献できるかを、具体的な導入事例や情報設計の観点から解説します。
-*   **relatedPosts**: `h3-dev-log-1`
+*   **relatedPosts**: (なし)
 *   **H2見出し一覧**:
     *   `## 介護現場が直面する課題とAIの親和性`
     *   `## 「情報」を整えることの重要性`
@@ -161,24 +161,6 @@
 
 ---
 
-### 9. 情報発信メディア「info.h3incover.com」の新規構築における技術選定と実装ログ
-*   **ファイル名**: `h3-dev-log-1.md`
-*   **title**: 情報発信メディア「info.h3incover.com」の新規構築における技術選定と実装ログ
-*   **slug**: `h3-dev-log-1`
-*   **date (publishedAt)**: `2026-06-25`
-*   **category**: H3開発日誌
-*   **tags**: `H3開発日誌`, `Web`, `Next.js`
-*   **series**: (未設定)
-*   **description**: H3 Incoverの情報発信メディア「info.h3incover.com」をNext.jsとTailwind CSSで新規構築した際の実装プロセスと、軽量さを重視した技術構成についてまとめます。
-*   **relatedPosts**: `web-design-essentials`
-*   **H2見出し一覧**:
-    *   `## 新規構築の背景`
-    *   `## 技術スタックの選定理由`
-    *   `## 実装のポイント`
-    *   `## 課題と今後のロードマップ`
-
----
-
 ### 10. 「売り込まない」小規模事業者のための寄り添い型営業アプローチ
 *   **ファイル名**: `sales-method-for-small-business.md`
 *   **title**: 「売り込まない」小規模事業者のための寄り添い型営業アプローチ
@@ -224,7 +206,7 @@
 *   **tags**: `Web`, `情報設計`, `UI`
 *   **series**: (未設定)
 *   **description**: 情報が溢れる現代において、本当に必要な情報が必要な人に届くために必要な「情報設計（IA）」の考え方について解説します。
-*   **relatedPosts**: `ai-in-nursing-care`, `h3-dev-log-1`
+*   **relatedPosts**: `ai-in-nursing-care`
 *   **H2見出し一覧**:
     *   `## 情報設計（Information Architecture = IA）とは`
     *   `## なぜ情報設計が重要なのか？`
