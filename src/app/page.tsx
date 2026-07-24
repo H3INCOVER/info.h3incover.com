@@ -7,7 +7,7 @@ export default function Home() {
   const allPosts = getSortedPostsData();
   const featuredPosts = allPosts.filter((post) => post.recommend).slice(0, 3);
   const latestPosts = allPosts.slice(0, 4);
-  const categories = ['AI', '介護', 'Web', '営業', '情報設計', 'H3開発日誌'];
+  const categories = ['AI', '介護', '人材戦略', 'Web', '営業', '情報設計', 'H3開発日誌'];
 
   return (
     <div className="flex flex-col">

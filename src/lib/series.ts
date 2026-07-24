@@ -34,7 +34,9 @@ export const seriesList: Series[] = [
   {
     id: "care-hr-strategy",
     name: "介護事業の人材戦略シリーズ",
-    posts: [],
+    posts: [
+      { title: "人が来ない時代の介護事業の人材戦略｜採用・育成・定着を一つずつ見直す", slug: "care-hr-strategy-overview" },
+    ],
   },
 ];
 

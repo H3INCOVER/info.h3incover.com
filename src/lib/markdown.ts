@@ -78,6 +78,7 @@ export function getSortedPostsData(): Post[] {
         series: matterResult.data.series || undefined,
         seriesName: getSeriesName(matterResult.data.series),
         publishedOrder: matterResult.data.publishedOrder !== undefined ? Number(matterResult.data.publishedOrder) : undefined,
+        articleNumber: matterResult.data.articleNumber !== undefined ? Number(matterResult.data.articleNumber) : undefined,
         body: matterResult.content,
         contentHtml: '',
       } as Post;
@@ -89,6 +90,11 @@ export function getSortedPostsData(): Post[] {
     } else if (a.publishedAt > b.publishedAt) {
       return -1;
     } else {
+      const articleNumberA = a.articleNumber !== undefined ? a.articleNumber : 0;
+      const articleNumberB = b.articleNumber !== undefined ? b.articleNumber : 0;
+      if (articleNumberA !== articleNumberB) {
+        return articleNumberB - articleNumberA;
+      }
       const orderA = a.publishedOrder !== undefined ? a.publishedOrder : 0;
       const orderB = b.publishedOrder !== undefined ? b.publishedOrder : 0;
       return orderB - orderA;
@@ -97,7 +103,7 @@ export function getSortedPostsData(): Post[] {
 
   return sortedPosts.map((post, index) => ({
     ...post,
-    articleNumber: sortedPosts.length - index,
+    articleNumber: post.articleNumber ?? sortedPosts.length - index,
     isLatest: index === 0,
   }));
 }
