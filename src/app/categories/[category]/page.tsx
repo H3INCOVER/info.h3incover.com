@@ -68,7 +68,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                 {/* アイキャッチ画像 */}
                 <Link
                   href={`/posts/${post.slug}`}
-                  className="block relative w-full aspect-video rounded-3xl overflow-hidden mb-5 border border-brand-border bg-brand-bg-soft"
+                  className="block relative w-full aspect-video rounded-3xl overflow-hidden mb-0 md:mb-5 border border-brand-border bg-brand-bg-soft"
                 >
                   <ImageWithFallback
                     src={post.eyecatch}
@@ -78,14 +78,16 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   />
                 </Link>
 
-                <div className="flex items-center gap-3 text-xs font-bold text-brand-muted mb-3">
-                  <span className="text-brand-red">No.{String(post.articleNumber).padStart(4, '0')}</span>
+                <div aria-hidden="true" className="h-2 bg-brand-red rounded-full mt-3 mb-5 md:hidden" />
+
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs font-bold text-brand-muted mb-3">
+                  <span className="text-brand-red whitespace-nowrap">No.{String(post.articleNumber).padStart(4, '0')}</span>
                   <span>•</span>
                   <span className="text-brand-black">{post.seriesName || post.category}</span>
                   {post.publishedOrder !== undefined && (
                     <>
                       <span>•</span>
-                      <span className="text-brand-black">第{post.publishedOrder}回</span>
+                      <span className="text-brand-black whitespace-nowrap">第{post.publishedOrder}回</span>
                     </>
                   )}
                   {post.isLatest && (
@@ -95,7 +97,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                     </>
                   )}
                   <span>•</span>
-                  <span className="flex items-center gap-1">
+                  <span className="flex items-center gap-1 whitespace-nowrap">
                     <Calendar className="w-3.5 h-3.5" />
                     {post.publishedAt}
                   </span>
