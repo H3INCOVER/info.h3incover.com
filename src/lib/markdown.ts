@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
+import { getSeriesName } from '@/lib/series';
 
 const postsDirectory = path.join(process.cwd(), 'src/content/posts');
 
@@ -20,6 +21,7 @@ export interface Post {
   relatedPosts?: string[];
   recommend?: boolean;
   series?: string;
+  seriesName?: string;
   publishedOrder?: number;
   articleNumber?: number;
   isLatest?: boolean;
@@ -74,6 +76,7 @@ export function getSortedPostsData(): Post[] {
         recommend: matterResult.data.recommend || false,
         relatedPosts: matterResult.data.relatedPosts || [],
         series: matterResult.data.series || undefined,
+        seriesName: getSeriesName(matterResult.data.series),
         publishedOrder: matterResult.data.publishedOrder !== undefined ? Number(matterResult.data.publishedOrder) : undefined,
         body: matterResult.content,
         contentHtml: '',
@@ -138,6 +141,7 @@ export async function getPostData(slug: string): Promise<Post | null> {
     recommend: matterResult.data.recommend || false,
     relatedPosts: matterResult.data.relatedPosts || [],
     series: matterResult.data.series || undefined,
+    seriesName: getSeriesName(matterResult.data.series),
     publishedOrder: matterResult.data.publishedOrder !== undefined ? Number(matterResult.data.publishedOrder) : undefined,
     articleNumber: indexedPost?.articleNumber,
     isLatest: indexedPost?.isLatest,
@@ -240,6 +244,7 @@ export function getCategoryImageUrl(category: string): string {
     '営業': '/images/categories/sales.png',
     '情報設計': '/images/categories/information_design.png',
     'H3開発日誌': '/images/categories/development.png',
+    '人材戦略': '/images/categories/human_resources.png',
   };
 
   return mapping[category] || '/images/categories/other.png';

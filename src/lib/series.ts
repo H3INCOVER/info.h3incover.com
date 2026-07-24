@@ -30,5 +30,14 @@ export const seriesList: Series[] = [
       { title: "重要事項説明書や運営規程をWebで公開する実務手順｜PDF掲載と更新時の注意点", slug: "care-website-pdf-publishing" },
       { title: "WordPressとノーコードツールはどちらが合う？介護事業所のホームページ制作を比較", slug: "care-website-nocode-tools" },
     ]
-  }
+  },
+  {
+    id: "care-hr-strategy",
+    name: "介護事業の人材戦略シリーズ",
+    posts: [],
+  },
 ];
+
+export function getSeriesName(seriesId?: string): string | undefined {
+  return seriesList.find((series) => series.id === seriesId)?.name;
+}

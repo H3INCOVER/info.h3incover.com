@@ -6,7 +6,7 @@ import TableOfContents from '@/components/TableOfContents';
 import ShareButtons from '@/components/ShareButtons';
 import ImageWithFallback from '@/components/ImageWithFallback';
 import SeriesNavigation from '@/components/SeriesNavigation';
-import { Calendar, RefreshCw, User, Folder, Tag, ArrowRight } from 'lucide-react';
+import { Calendar, RefreshCw, Tag, ArrowRight } from 'lucide-react';
 import { Metadata } from 'next';
 
 interface PostPageProps {
@@ -111,20 +111,31 @@ export default async function PostPage({ params }: PostPageProps) {
           {/* 記事ヘッダー */}
           <header className="mb-10 pb-8 border-b border-brand-border">
             <div className="flex flex-wrap items-center gap-3 text-xs font-bold text-brand-muted mb-4">
-              <Link
-                href={`/categories/${post.category}`}
-                className="inline-flex items-center gap-1 bg-brand-bg text-brand-black px-3 py-1 rounded-full hover:bg-brand-red hover:text-white transition-all duration-200"
-              >
-                <Folder className="w-3 h-3" />
-                {post.category}
-              </Link>
+              <span className="text-brand-red">No.{String(post.articleNumber).padStart(4, '0')}</span>
+              <span>•</span>
+              {post.seriesName ? (
+                <span className="text-brand-black">{post.seriesName}</span>
+              ) : (
+                <Link
+                  href={`/categories/${post.category}`}
+                  className="text-brand-black hover:text-brand-red transition-colors duration-200"
+                >
+                  {post.category}
+                </Link>
+              )}
               {post.publishedOrder !== undefined && (
-                <span className="text-brand-black">第{post.publishedOrder}回</span>
+                <>
+                  <span>•</span>
+                  <span className="text-brand-black">第{post.publishedOrder}回</span>
+                </>
               )}
-              <span>No.{String(post.articleNumber).padStart(4, '0')}</span>
               {post.isLatest && (
-                <span className="rounded-full bg-brand-red px-2 py-0.5 text-white">NEW</span>
+                <>
+                  <span>•</span>
+                  <span className="rounded-full bg-brand-red px-2 py-0.5 text-white">NEW</span>
+                </>
               )}
+              <span>•</span>
               <span className="flex items-center gap-1">
                 <Calendar className="w-3.5 h-3.5" />
                 {post.publishedAt}
