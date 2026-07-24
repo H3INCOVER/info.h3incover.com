@@ -28,6 +28,7 @@ export const seriesList: Series[] = [
       { title: "ホームページ解約時のトラブルを防ぐ！著作権とデータ引き渡しのルール", slug: "care-website-copyright-cancellation" },
       { title: "介護ホームページのSEO対策とアクセス解析に高額な費用は必要？判断するための確認ポイント", slug: "care-website-seo-analytics" },
       { title: "重要事項説明書や運営規程をWebで公開する実務手順｜PDF掲載と更新時の注意点", slug: "care-website-pdf-publishing" },
+      { title: "WordPressとノーコードツールはどちらが合う？介護事業所のホームページ制作を比較", slug: "care-website-nocode-tools" },
     ]
   }
 ];
