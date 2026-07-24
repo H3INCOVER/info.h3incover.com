@@ -118,6 +118,13 @@ export default async function PostPage({ params }: PostPageProps) {
                 <Folder className="w-3 h-3" />
                 {post.category}
               </Link>
+              {post.publishedOrder !== undefined && (
+                <span className="text-brand-black">第{post.publishedOrder}回</span>
+              )}
+              <span>No.{String(post.articleNumber).padStart(4, '0')}</span>
+              {post.isLatest && (
+                <span className="rounded-full bg-brand-red px-2 py-0.5 text-white">NEW</span>
+              )}
               <span className="flex items-center gap-1">
                 <Calendar className="w-3.5 h-3.5" />
                 {post.publishedAt}

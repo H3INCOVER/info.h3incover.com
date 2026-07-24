@@ -21,6 +21,8 @@ export interface Post {
   recommend?: boolean;
   series?: string;
   publishedOrder?: number;
+  articleNumber?: number;
+  isLatest?: boolean;
 }
 
 export interface TocHeading {
@@ -78,7 +80,7 @@ export function getSortedPostsData(): Post[] {
       } as Post;
     });
 
-  return allPostsData.sort((a, b) => {
+  const sortedPosts = allPostsData.sort((a, b) => {
     if (a.publishedAt < b.publishedAt) {
       return 1;
     } else if (a.publishedAt > b.publishedAt) {
@@ -89,6 +91,12 @@ export function getSortedPostsData(): Post[] {
       return orderB - orderA;
     }
   });
+
+  return sortedPosts.map((post, index) => ({
+    ...post,
+    articleNumber: sortedPosts.length - index,
+    isLatest: index === 0,
+  }));
 }
 
 // 特定の記事をSlugで取得
@@ -115,6 +123,7 @@ export async function getPostData(slug: string): Promise<Post | null> {
   // レンダリングする場合は、XSS脆弱性を防ぐため、`isomorphic-dompurify` などのライブラリを使用し、
   // HTMLをサニタイズ（例：`DOMPurify.sanitize(contentHtml)`）するように拡張してください。
   const contentHtml = await marked.parse(matterResult.content);
+  const indexedPost = getSortedPostsData().find((post) => post.slug === slug);
 
   return {
     slug,
@@ -129,6 +138,9 @@ export async function getPostData(slug: string): Promise<Post | null> {
     recommend: matterResult.data.recommend || false,
     relatedPosts: matterResult.data.relatedPosts || [],
     series: matterResult.data.series || undefined,
+    publishedOrder: matterResult.data.publishedOrder !== undefined ? Number(matterResult.data.publishedOrder) : undefined,
+    articleNumber: indexedPost?.articleNumber,
+    isLatest: indexedPost?.isLatest,
     body: matterResult.content,
     contentHtml,
   } as Post;

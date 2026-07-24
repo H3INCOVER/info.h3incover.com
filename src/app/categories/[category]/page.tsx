@@ -81,6 +81,17 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                 <div className="flex items-center gap-3 text-xs font-bold text-brand-muted mb-3">
                   <span className="text-brand-red">{post.category}</span>
                   <span>•</span>
+                  {post.publishedOrder !== undefined && (
+                    <>
+                      <span className="text-brand-black">第{post.publishedOrder}回</span>
+                      <span>•</span>
+                    </>
+                  )}
+                  <span>No.{String(post.articleNumber).padStart(4, '0')}</span>
+                  <span>•</span>
+                  {post.isLatest && (
+                    <span className="rounded-full bg-brand-red px-2 py-0.5 text-white">NEW</span>
+                  )}
                   <span className="flex items-center gap-1">
                     <Calendar className="w-3.5 h-3.5" />
                     {post.publishedAt}
