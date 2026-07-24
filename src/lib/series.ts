@@ -27,6 +27,7 @@ export const seriesList: Series[] = [
       { title: "介護ホームページのドメイン・サーバー名義は誰のもの？契約前に確かめたい「将来困らないため」の確認ポイント", slug: "care-website-domain-server-ownership" },
       { title: "ホームページ解約時のトラブルを防ぐ！著作権とデータ引き渡しのルール", slug: "care-website-copyright-cancellation" },
       { title: "介護ホームページのSEO対策とアクセス解析に高額な費用は必要？判断するための確認ポイント", slug: "care-website-seo-analytics" },
+      { title: "重要事項説明書や運営規程をWebで公開する実務手順｜PDF掲載と更新時の注意点", slug: "care-website-pdf-publishing" },
     ]
   }
 ];
