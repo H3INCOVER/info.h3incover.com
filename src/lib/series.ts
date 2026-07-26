@@ -36,6 +36,7 @@ export const seriesList: Series[] = [
     name: "介護事業の人材戦略シリーズ",
     posts: [
       { title: "人が来ない時代の介護事業の人材戦略｜採用・育成・定着を一つずつ見直す", slug: "care-hr-strategy-overview" },
+      { title: "欠員が出てから求人を始めないための要員計画｜介護事業所の必要人材を整理", slug: "care-hr-workforce-planning" },
     ],
   },
 ];
