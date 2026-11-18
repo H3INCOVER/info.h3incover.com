@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SITE_NAME, SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from "@/lib/seo";
 
 const notoSansJp = Noto_Sans_JP({
   subsets: ["latin"],
@@ -13,30 +14,10 @@ const notoSansJp = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: {
-    template: "%s | H3 Incover Info",
-    default: "H3 Incover Info | 情報を、届く形に整えるための記録。",
-  },
-  description: "AI、介護、Web、営業、情報設計について、実践しながら学んだことを整理した知識庫・研究ノートメディアです。",
-  metadataBase: new URL("https://info.h3incover.com"),
-  alternates: {
-    types: {
-      "application/rss+xml": "https://info.h3incover.com/feed.xml",
-    },
-  },
-  openGraph: {
-    title: "H3 Incover Info",
-    description: "情報を、届く形に整えるための記録。",
-    url: "https://info.h3incover.com",
-    siteName: "H3 Incover Info",
-    locale: "ja_JP",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "H3 Incover Info",
-    description: "情報を、届く形に整えるための記録。",
-  },
+  title: { template: `%s | ${SITE_NAME}`, default: SITE_TITLE },
+  description: SITE_DESCRIPTION,
+  metadataBase: new URL(SITE_URL),
+  alternates: { types: { 'application/rss+xml': `${SITE_URL}/feed.xml` } },
 };
 
 export default function RootLayout({

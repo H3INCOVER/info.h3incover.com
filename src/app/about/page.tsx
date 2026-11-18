@@ -1,9 +1,11 @@
-﻿import Breadcrumbs from '@/components/Breadcrumbs';
+﻿import { createPageMetadata } from '@/lib/seo';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
-export const metadata = {
-  title: 'このサイトについて',
-  description: '介護事業所のWebまわりで役立つ情報や、ホームページ、サーバー、ドメイン、Google検索などについて分かりやすく紹介する「H3 Incover Info」についてご紹介します。',
-};
+export const metadata = createPageMetadata(
+  'このサイトについて',
+  '介護事業所のWebまわりで役立つ情報や、ホームページ、サーバー、ドメイン、Google検索などについて分かりやすく紹介する「H3 Incover INFO」についてご紹介します。',
+  '/about',
+);
 
 export default function AboutPage() {
   return (
@@ -16,7 +18,7 @@ export default function AboutPage() {
             About Us
           </span>
           <h1 className="text-3xl md:text-5xl font-black text-brand-black tracking-tight leading-tight">
-            H3 Incover Info について
+            H3 Incover INFO について
           </h1>
         </header>
 

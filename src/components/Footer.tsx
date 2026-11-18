@@ -1,3 +1,4 @@
+import { SITE_DESCRIPTION } from '@/lib/seo';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -14,16 +15,13 @@ export default function Footer() {
                   H3
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm tracking-wide">H3 Incover Info</span>
+                  <span className="text-sm tracking-wide">H3 Incover INFO</span>
                 </div>
               </Link>
               <p className="text-sm text-gray-400 font-medium leading-relaxed whitespace-pre-line">
                 「見つけられる状態を、設計する。」{"\n"}
                 {"\n"}
-                H3 Incover INFO は、{"\n"}
-                AI・Web・営業・介護・情報設計について、{"\n"}
-                実践しながら学んだことを整理・発信する{"\n"}
-                知識・研究ノートです。
+                {SITE_DESCRIPTION}
               </p>
             </div>
 
@@ -57,7 +55,7 @@ export default function Footer() {
                     <span>📰</span> H3 Incover INFO
                   </div>
                   <div className="text-[11px] text-gray-400 font-medium leading-snug">
-                    AI・Web・営業・介護・情報設計の情報メディア
+                    介護事業所のWeb活用・情報発信・業務改善を中心とした実務メディア
                   </div>
                 </a>
 

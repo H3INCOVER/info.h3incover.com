@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation';
+import { createPageMetadata } from '@/lib/seo';
 import Link from 'next/link';
 import { getSortedPostsData, getAllCategoriesWithCounts } from '@/lib/markdown';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -23,10 +25,12 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { category } = await params;
   const decodedCategory = decodeURIComponent(category);
-  return {
-    title: `カテゴリ: ${decodedCategory}`,
-    description: `H3 Incover Info の「${decodedCategory}」カテゴリに関する記事一覧です。`,
-  };
+  if (!getAllCategoriesWithCounts().some(({ name }) => name === decodedCategory)) notFound();
+  return createPageMetadata(
+    `カテゴリ: ${decodedCategory}`,
+    `H3 Incover INFO の「${decodedCategory}」カテゴリに関する記事一覧です。`,
+    `/categories/${encodeURIComponent(decodedCategory)}`,
+  );
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
@@ -34,6 +38,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const decodedCategory = decodeURIComponent(category);
   const allPosts = getSortedPostsData();
   const posts = allPosts.filter((post) => post.category === decodedCategory);
+  if (posts.length === 0) notFound();
 
   return (
     <div className="max-w-[1120px] mx-auto px-5 py-8 md:py-16">

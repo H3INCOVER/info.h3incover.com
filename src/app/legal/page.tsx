@@ -1,10 +1,12 @@
+import { createPageMetadata } from '@/lib/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import OperatorDetails from '@/components/OperatorDetails';
 
-export const metadata = {
-  title: '特定商取引法に基づく表記',
-  description: 'H3 Incover の特定商取引法に基づく表記です。取引条件等の詳細を掲載しています。',
-};
+export const metadata = createPageMetadata(
+  '特定商取引法に基づく表記',
+  'H3 Incover の特定商取引法に基づく表記です。取引条件等の詳細を掲載しています。',
+  '/legal',
+);
 
 export default function LegalPage() {
   return (

@@ -10,7 +10,7 @@ export default function Header() {
           </div>
           <div className="flex flex-col">
             <span className="text-base tracking-wide leading-tight">H3 Incover</span>
-            <span className="text-[10px] text-brand-muted tracking-widest uppercase leading-none font-bold">Info</span>
+            <span className="text-[10px] text-brand-muted tracking-widest uppercase leading-none font-bold">INFO</span>
           </div>
         </Link>
 

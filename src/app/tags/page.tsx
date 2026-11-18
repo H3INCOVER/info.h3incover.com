@@ -1,12 +1,14 @@
+import { createPageMetadata } from '@/lib/seo';
 import Link from 'next/link';
 import { getAllTagsWithCounts } from '@/lib/markdown';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { Tag } from 'lucide-react';
 
-export const metadata = {
-  title: 'タグ一覧',
-  description: 'H3 Incover Info の記事タグ一覧です。',
-};
+export const metadata = createPageMetadata(
+  'タグ一覧',
+  'H3 Incover INFO の記事タグ一覧です。',
+  '/tags',
+);
 
 export default function TagsPage() {
   const tags = getAllTagsWithCounts();

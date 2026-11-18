@@ -1,9 +1,11 @@
+import { createPageMetadata } from '@/lib/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
-export const metadata = {
-  title: 'プライバシーポリシー',
-  description: 'H3 Incover のプライバシーポリシーです。個人情報の取り扱い方針について定めています。',
-};
+export const metadata = createPageMetadata(
+  'プライバシーポリシー',
+  'H3 Incover のプライバシーポリシーです。個人情報の取り扱い方針について定めています。',
+  '/privacy',
+);
 
 export default function PrivacyPage() {
   return (

@@ -1,3 +1,4 @@
+import { SITE_NAME, SITE_DESCRIPTION } from '@/lib/seo';
 import { NextResponse } from 'next/server';
 import { getSortedPostsData } from '@/lib/markdown';
 
@@ -27,9 +28,9 @@ export async function GET() {
   const rssFeedXml = `<?xml version="1.0" encoding="UTF-8" ?>
     <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
       <channel>
-        <title><![CDATA[H3 Incover Info]]></title>
+        <title><![CDATA[${SITE_NAME}]]></title>
         <link>${baseUrl}</link>
-        <description><![CDATA[情報を、届く形に整えるための記録。AI・介護・Web・営業・情報設計の知識庫メディア]]></description>
+        <description><![CDATA[${SITE_DESCRIPTION}]]></description>
         <language>ja</language>
         <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
         <atom:link href="${baseUrl}/feed.xml" rel="self" type="application/rss+xml" />

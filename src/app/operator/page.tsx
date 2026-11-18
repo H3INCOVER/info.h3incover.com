@@ -1,10 +1,12 @@
+import { createPageMetadata } from '@/lib/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import OperatorDetails from '@/components/OperatorDetails';
 
-export const metadata = {
-  title: '運営者情報',
-  description: 'H3 Incover の運営者情報および特定商取引法に基づく表記を掲載しています。',
-};
+export const metadata = createPageMetadata(
+  '運営者情報',
+  'H3 Incover の運営者情報および特定商取引法に基づく表記を掲載しています。',
+  '/operator',
+);
 
 export default function OperatorPage() {
   return (

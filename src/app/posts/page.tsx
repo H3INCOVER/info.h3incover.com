@@ -1,13 +1,15 @@
+import { createPageMetadata, SITE_DESCRIPTION } from '@/lib/seo';
 import Link from 'next/link';
 import { getSortedPostsData } from '@/lib/markdown';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageWithFallback from '@/components/ImageWithFallback';
 import { Calendar, BookOpen } from 'lucide-react';
 
-export const metadata = {
-  title: '記事一覧',
-  description: 'H3 Incover Info のすべての記事一覧です。AI・介護・Web・営業・情報設計などに関する実践的な知見を公開しています。',
-};
+export const metadata = createPageMetadata(
+  '記事一覧',
+  SITE_DESCRIPTION,
+  '/posts',
+);
 
 export default function PostsPage() {
   const posts = getSortedPostsData();

@@ -1,13 +1,17 @@
 import Link from 'next/link';
-import { getSortedPostsData } from '@/lib/markdown';
+import { getSortedPostsData, getAllCategoriesWithCounts } from '@/lib/markdown';
 import ImageWithFallback from '@/components/ImageWithFallback';
 import { ArrowRight, BookOpen, Tag, Calendar, User } from 'lucide-react';
+
+import { createPageMetadata, SITE_TITLE, SITE_DESCRIPTION } from '@/lib/seo';
+
+export const metadata = { ...createPageMetadata(SITE_TITLE, SITE_DESCRIPTION, '/'), title: { absolute: SITE_TITLE } };
 
 export default function Home() {
   const allPosts = getSortedPostsData();
   const featuredPosts = allPosts.filter((post) => post.recommend).slice(0, 3);
   const latestPosts = allPosts.slice(0, 4);
-  const categories = ['AI', '介護', '人材戦略', 'Web', '営業', '情報設計', 'H3開発日誌'];
+  const categories = getAllCategoriesWithCounts().map(({ name }) => name);
 
   return (
     <div className="flex flex-col">
@@ -16,7 +20,7 @@ export default function Home() {
         <div className="max-w-[1120px] mx-auto px-5">
           <div className="max-w-3xl">
             <span className="text-xs font-black tracking-widest text-brand-red uppercase mb-4 block">
-              H3 Incover Info
+              H3 Incover INFO
             </span>
             <h1 className="text-4xl md:text-6xl font-black text-brand-black leading-tight tracking-tight mb-6">
               介護とWEB
@@ -233,7 +237,7 @@ export default function Home() {
               About Media
             </span>
             <h2 className="text-2xl md:text-3xl font-black text-brand-black tracking-tight mb-6">
-              H3 Incover Info について
+              H3 Incover INFO について
             </h2>
             <div className="text-brand-muted font-medium space-y-4 text-base md:text-lg leading-relaxed">
               <p>

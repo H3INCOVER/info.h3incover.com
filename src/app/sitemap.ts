@@ -3,7 +3,6 @@ import { getSortedPostsData, getAllCategoriesWithCounts, getAllTagsWithCounts } 
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://info.h3incover.com';
-  const currentDate = new Date().toISOString();
 
   // 1. 固定ページ
   const staticPaths = [
@@ -18,7 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tags',
   ].map((path) => ({
     url: `${baseUrl}${path}`,
-    lastModified: currentDate,
     changeFrequency: 'weekly' as const,
     priority: path === '' ? 1.0 : 0.8,
   }));
@@ -36,7 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categories = getAllCategoriesWithCounts();
   const categoryPaths = categories.map((cat) => ({
     url: `${baseUrl}/categories/${cat.name}`,
-    lastModified: currentDate,
     changeFrequency: 'weekly' as const,
     priority: 0.4,
   }));
@@ -45,7 +42,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const tags = getAllTagsWithCounts();
   const tagPaths = tags.map((tag) => ({
     url: `${baseUrl}/tags/${tag.name}`,
-    lastModified: currentDate,
     changeFrequency: 'weekly' as const,
     priority: 0.4,
   }));

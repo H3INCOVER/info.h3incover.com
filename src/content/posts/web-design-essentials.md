@@ -6,7 +6,7 @@ category: "情報設計"
 tags: ["Web", "情報設計", "UI"]
 author: "Hiroshi Hiraoka"
 eyecatch: "/images/blog/information-architecture.jpg"
-recommend: true
+recommend: false
 relatedPosts: ["ai-in-nursing-care"]
 ---
 

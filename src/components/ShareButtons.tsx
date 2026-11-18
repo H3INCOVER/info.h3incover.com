@@ -25,7 +25,7 @@ export default function ShareButtons({ title }: ShareButtonsProps) {
     }
   };
 
-  const shareText = `${title} | H3 Incover Info`;
+  const shareText = `${title} | H3 Incover INFO`;
 
   const xShareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareText)}`;
   const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;

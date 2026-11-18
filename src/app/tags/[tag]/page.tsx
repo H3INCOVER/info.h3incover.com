@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation';
+import { createPageMetadata } from '@/lib/seo';
 import Link from 'next/link';
 import { getSortedPostsData, getAllTagsWithCounts } from '@/lib/markdown';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -23,10 +25,12 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: TagPageProps): Promise<Metadata> {
   const { tag } = await params;
   const decodedTag = decodeURIComponent(tag);
-  return {
-    title: `タグ: #${decodedTag}`,
-    description: `H3 Incover Info の「#${decodedTag}」タグに関連する記事一覧です。`,
-  };
+  if (!getAllTagsWithCounts().some(({ name }) => name === decodedTag)) notFound();
+  return createPageMetadata(
+    `タグ: #${decodedTag}`,
+    `H3 Incover INFO の「#${decodedTag}」タグに関連する記事一覧です。`,
+    `/tags/${encodeURIComponent(decodedTag)}`,
+  );
 }
 
 export default async function TagPage({ params }: TagPageProps) {
@@ -34,6 +38,7 @@ export default async function TagPage({ params }: TagPageProps) {
   const decodedTag = decodeURIComponent(tag);
   const allPosts = getSortedPostsData();
   const posts = allPosts.filter((post) => post.tags.includes(decodedTag));
+  if (posts.length === 0) notFound();
 
   return (
     <div className="max-w-[1120px] mx-auto px-5 py-8 md:py-16">

@@ -1,12 +1,14 @@
+import { createPageMetadata } from '@/lib/seo';
 import Link from 'next/link';
 import { getAllCategoriesWithCounts } from '@/lib/markdown';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { Folder } from 'lucide-react';
 
-export const metadata = {
-  title: 'カテゴリ一覧',
-  description: 'H3 Incover Info の記事カテゴリ一覧です。',
-};
+export const metadata = createPageMetadata(
+  'カテゴリ一覧',
+  'H3 Incover INFO の記事カテゴリ一覧です。',
+  '/categories',
+);
 
 export default function CategoriesPage() {
   const categories = getAllCategoriesWithCounts();

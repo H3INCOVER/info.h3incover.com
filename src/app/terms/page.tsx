@@ -1,9 +1,11 @@
+import { createPageMetadata } from '@/lib/seo';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
-export const metadata = {
-  title: '利用規約',
-  description: 'H3 Incover が運営するWebサイトの利用規約です。本サイトの利用条件を定めています。',
-};
+export const metadata = createPageMetadata(
+  '利用規約',
+  'H3 Incover が運営するWebサイトの利用規約です。本サイトの利用条件を定めています。',
+  '/terms',
+);
 
 export default function TermsPage() {
   return (

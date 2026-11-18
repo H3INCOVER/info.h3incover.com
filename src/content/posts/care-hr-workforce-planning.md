@@ -7,7 +7,7 @@ category: "人材戦略"
 tags: ["介護", "人材戦略", "要員計画", "採用", "人員配置"]
 author: "H3 Incover"
 eyecatch: "/images/categories/human_resources.png"
-recommend: false
+recommend: true
 relatedPosts: ["care-hr-strategy-overview", "ai-in-nursing-care", "care-website-user-perspective"]
 series: "care-hr-strategy"
 publishedOrder: 2

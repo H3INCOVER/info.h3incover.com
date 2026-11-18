@@ -1,3 +1,4 @@
+import { createPageMetadata, SITE_LOGO } from '@/lib/seo';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getPostData, getSortedPostsData, getRelatedPosts, extractHeadings } from '@/lib/markdown';
@@ -29,25 +30,18 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
   const post = await getPostData(slug);
 
   if (!post) {
-    return {};
+    notFound();
   }
 
+  const metadata = createPageMetadata(post.title, post.description, `/posts/${slug}`, post.eyecatch);
   return {
-    title: post.title,
-    description: post.description,
+    ...metadata,
     openGraph: {
-      title: post.title,
-      description: post.description,
+      ...metadata.openGraph,
       type: 'article',
-      url: `https://info.h3incover.com/posts/${slug}`,
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
       authors: [post.author],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.description,
     },
   };
 }
@@ -73,7 +67,7 @@ export default async function PostPage({ params }: PostPageProps) {
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
     author: {
-      '@type': 'Person',
+      '@type': post.author === 'H3 Incover' ? 'Organization' : 'Person',
       name: post.author,
     },
     publisher: {
@@ -81,7 +75,7 @@ export default async function PostPage({ params }: PostPageProps) {
       name: 'H3 Incover',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://info.h3incover.com/asset/images/favicon.jpg', // 旧ファビコンへのリンク
+        url: SITE_LOGO,
       },
     },
     mainEntityOfPage: {
