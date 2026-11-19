@@ -3,7 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata = createPageMetadata(
   'このサイトについて',
-  '介護事業所のWebまわりで役立つ情報や、ホームページ、サーバー、ドメイン、Google検索などについて分かりやすく紹介する「H3 Incover INFO」についてご紹介します。',
+  'H3 Incover INFOについて。介護職の仕事に役立つ情報や日常の疑問、介護職ハック、働き方、資格などを紹介するメディアです。介護事業所向けのホームページやWeb活用に関する情報も掲載しています。',
   '/about',
 );
 
@@ -18,7 +18,7 @@ export default function AboutPage() {
             About Us
           </span>
           <h1 className="text-3xl md:text-5xl font-black text-brand-black tracking-tight leading-tight">
-            H3 Incover INFO について
+            H3 Incover INFOについて
           </h1>
         </header>
 
@@ -28,16 +28,13 @@ export default function AboutPage() {
               メディアの目的
             </h2>
             <p>
-              介護事業所のWebまわりで役立つ情報をまとめています。
+              H3 Incover INFOでは、介護職の仕事に役立つ情報や、日常のちょっとした疑問、介護職ハックなどをご紹介しています。
             </p>
             <p>
-              ホームページ、サーバー、ドメイン、Google検索、SEOなど、Webに関する言葉や仕組みをできるだけ分かりやすく紹介しています。
+              介護の仕事内容、働き方、資格、職場でのあるあるなど、さまざまなテーマを取り上げています。
             </p>
             <p>
-              「何から始めればいいの？」「この言葉ってどういう意味？」と思った時に、気軽に立ち寄れる場所になればと考えています。
-            </p>
-            <p>
-              必要な時に、少しでもお役に立てれば幸いです。
+              また、介護事業所向けのホームページやWeb活用に関する情報も掲載しています。
             </p>
           </section>
 
@@ -46,16 +43,15 @@ export default function AboutPage() {
               こんなことを書いています
             </h2>
             <p>
-              現在は主に、介護事業所のWebまわりについて取り上げています。
+              介護職の仕事や日常に関わるテーマを取り上げています。
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>ホームページ</strong></li>
-              <li><strong>Google検索</strong></li>
-              <li><strong>Googleビジネスプロフィール</strong></li>
-              <li><strong>サーバー・ドメイン</strong></li>
-              <li><strong>SEO</strong></li>
-              <li><strong>保守・運用</strong></li>
-              <li><strong>AI活用</strong></li>
+              <li><strong>介護職ハック</strong></li>
+              <li><strong>介護の仕事内容・基本的な疑問</strong></li>
+              <li><strong>介護職のあるある</strong></li>
+              <li><strong>働き方・転職</strong></li>
+              <li><strong>資格・仕事に役立つ情報</strong></li>
+              <li><strong>介護事業所向けWeb活用</strong></li>
             </ul>
             <p className="pt-2 text-sm text-brand-muted">
               今後は状況に応じて、その他のテーマについても取り上げていく予定です。
@@ -65,7 +61,7 @@ export default function AboutPage() {
           <section className="bg-brand-bg/50 border border-brand-border rounded-2xl p-6 md:p-8 space-y-4 mt-12">
             <h3 className="text-lg font-black text-brand-black">お問い合わせ・ご相談</h3>
             <p className="text-sm text-brand-muted leading-relaxed">
-              介護事業所向けホームページサービスについてのご相談や、ご質問などがありましたら、お気軽にお問い合わせください。
+              掲載内容に関するご質問や、H3 Incoverのサービスについてのご相談は、メールでお問い合わせください。
             </p>
             <div className="pt-2">
               <a

@@ -55,7 +55,7 @@ export default function Footer() {
                     <span>📰</span> H3 Incover INFO
                   </div>
                   <div className="text-[11px] text-gray-400 font-medium leading-snug">
-                    介護事業所のWeb活用・情報発信・業務改善を中心とした実務メディア
+                    介護職の仕事や暮らしに役立つ情報と、介護事業所向けWeb活用情報を紹介するメディア
                   </div>
                 </a>
 

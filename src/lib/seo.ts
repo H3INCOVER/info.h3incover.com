@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 
 export const SITE_NAME = 'H3 Incover INFO';
 export const SITE_URL = 'https://info.h3incover.com';
-export const SITE_DESCRIPTION = 'H3 Incover INFOは、介護事業所のWeb活用・情報発信・業務改善を中心に、事業運営に役立つ実務情報を発信するメディアです。';
-export const SITE_TITLE = `${SITE_NAME} | 介護事業所のWeb活用・情報発信・業務改善`;
+export const SITE_DESCRIPTION = 'H3 Incover INFOでは、介護職ハック、仕事の疑問、働き方、資格、転職など、介護職として働く人やこれから介護の仕事を始める人に役立つ情報を紹介しています。介護事業所向けのWeb活用情報も掲載しています。';
+export const SITE_TITLE = `${SITE_NAME} | 介護職の仕事と暮らしに役立つ情報`;
 export const SITE_LOGO = `${SITE_URL}/images/favicon.jpg`;
 
 // Nested metadata is replaced by Next.js, so each page supplies its full share metadata.

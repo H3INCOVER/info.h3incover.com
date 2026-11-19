@@ -23,10 +23,10 @@ export default function Home() {
               H3 Incover INFO
             </span>
             <h1 className="text-4xl md:text-6xl font-black text-brand-black leading-tight tracking-tight mb-6">
-              介護とWEB
+              介護職ハック。
             </h1>
             <p className="text-lg md:text-xl text-brand-muted font-semibold leading-relaxed mb-8">
-              介護事業所のWebまわりの情報まとめ。
+              介護職ハック、仕事の疑問、働き方、資格、転職など、介護に関するさまざまな情報をお届けします。
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -237,17 +237,17 @@ export default function Home() {
               About Media
             </span>
             <h2 className="text-2xl md:text-3xl font-black text-brand-black tracking-tight mb-6">
-              H3 Incover INFO について
+              H3 Incover INFOについて
             </h2>
             <div className="text-brand-muted font-medium space-y-4 text-base md:text-lg leading-relaxed">
               <p>
-                介護事業所のWebまわりで役立つ情報をまとめています。
+                H3 Incover INFOでは、介護職の仕事に役立つ情報や、日常のちょっとした疑問、介護職ハックなどをご紹介しています。
               </p>
               <p>
-                ホームページ、サーバー、ドメイン、Google検索、AI活用など、Webに関する言葉や仕組みをできるだけ分かりやすく紹介しています。
+                介護の仕事内容、働き方、資格、職場でのあるあるなど、さまざまなテーマを取り上げています。
               </p>
               <p>
-                「何から始めればいいのか分からない」「この言葉の意味が分からない」という時に、気軽に立ち寄れる場所を目指しています。
+                また、介護事業所向けのホームページやWeb活用に関する情報も掲載しています。
               </p>
               <p className="pt-2 text-brand-black font-semibold">
                 少しでも皆さまのお役に立てれば幸いです。
@@ -264,10 +264,10 @@ export default function Home() {
             Contact & Service
           </span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-8">
-            情報の伝わり方を、変えていく。
+            運営者・サービスについて
           </h2>
           <p className="max-w-xl mx-auto text-gray-400 font-semibold text-sm md:text-base leading-relaxed mb-12">
-            H3 Incover では、介護事業所向けの簡単ホームページサービスや、小規模事業者向けのオーダーメイドWebサイト制作、情報設計のご相談を承っています。
+            H3 Incover INFOは、H3 Incoverが運営しています。運営者情報や、ホームページ制作・Web活用に関するサービスは、以下のサイトでご案内しています。
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <a
