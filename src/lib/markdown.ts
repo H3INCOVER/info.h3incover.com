@@ -19,6 +19,8 @@ export interface Post {
   body: string;
   contentHtml: string;
   relatedPosts?: string[];
+  relatedPostsMode?: 'manual';
+  showWebConsultation?: boolean;
   recommend?: boolean;
   series?: string;
   seriesName?: string;
@@ -75,6 +77,8 @@ export function getSortedPostsData(): Post[] {
         eyecatch: getValidatedEyecatch(matterResult.data.eyecatch, matterResult.data.category || ''),
         recommend: matterResult.data.recommend || false,
         relatedPosts: matterResult.data.relatedPosts || [],
+        relatedPostsMode: matterResult.data.relatedPostsMode === 'manual' ? 'manual' : undefined,
+        showWebConsultation: matterResult.data.showWebConsultation !== false,
         series: matterResult.data.series || undefined,
         seriesName: getSeriesName(matterResult.data.series),
         publishedOrder: matterResult.data.publishedOrder !== undefined ? Number(matterResult.data.publishedOrder) : undefined,
@@ -146,6 +150,8 @@ export async function getPostData(slug: string): Promise<Post | null> {
     eyecatch: getValidatedEyecatch(matterResult.data.eyecatch, matterResult.data.category || ''),
     recommend: matterResult.data.recommend || false,
     relatedPosts: matterResult.data.relatedPosts || [],
+    relatedPostsMode: matterResult.data.relatedPostsMode === 'manual' ? 'manual' : undefined,
+    showWebConsultation: matterResult.data.showWebConsultation !== false,
     series: matterResult.data.series || undefined,
     seriesName: getSeriesName(matterResult.data.series),
     publishedOrder: matterResult.data.publishedOrder !== undefined ? Number(matterResult.data.publishedOrder) : undefined,
@@ -186,6 +192,13 @@ export function extractHeadings(markdownText: string): TocHeading[] {
 
 // 関連記事の取得
 export function getRelatedPosts(currentPost: Post, allPosts: Post[], limit = 3): Post[] {
+  if (currentPost.relatedPostsMode === 'manual') {
+    return [...new Set(currentPost.relatedPosts || [])]
+      .map((slug) => allPosts.find((post) => post.slug === slug && post.slug !== currentPost.slug))
+      .filter((post): post is Post => post !== undefined)
+      .slice(0, limit);
+  }
+
   if (currentPost.relatedPosts && currentPost.relatedPosts.length > 0) {
     const specified = allPosts.filter((post) => currentPost.relatedPosts?.includes(post.slug));
     if (specified.length > 0) {
